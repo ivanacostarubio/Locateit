@@ -1,0 +1,29 @@
+
+  <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAwk9cM7XgXv55U_ljM6-oAhRULQ7kQx9rWeXH9H7y5EoMxImrQBQ6oTzAj49HPy7vN5Qra_nl9czwqQ"></script>
+  <script type="text/javascript">
+    google.load("maps", "2.x");
+
+    // Call this function when the page has been loaded
+    function initialize() {
+      var map = new google.maps.Map2(document.getElementById("map"));
+      map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
+    }
+    google.setOnLoadCallback(initialize);
+  </script>
+  
+  
+  
+<p>
+  <b>Nombre:</b>
+  <%=h @tienda.nombre %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%=h @tienda.direccion %>
+</p>
+
+<p>ABQIAAAAwk9cM7XgXv55U_ljM6-oAhRULQ7kQx9rWeXH9H7y5EoMxImrQBQ6oTzAj49HPy7vN5Qra_nl9czwqQ</p>
+
+<%= link_to 'Edit', edit_tienda_path(@tienda) %> |
+<%= link_to 'Back', tiendas_path %>

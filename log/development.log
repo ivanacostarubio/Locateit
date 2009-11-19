@@ -1,0 +1,394 @@
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-11-19 15:54:51) [GET]
+  [4;36;1mTienda Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: tiendas: SELECT * FROM "tiendas" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: tiendas: SELECT * FROM "tiendas" ):
+  app/controllers/tiendas_controller.rb:5:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTiendas (20091119205342)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "tiendas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "direccion" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091119205342')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tiendas")[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-11-19 15:55:08) [GET]
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM "tiendas" [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Completed in 140ms (View: 129, DB: 0) | 200 OK [http://127.0.0.1/]
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-11-19 15:58:08) [GET]
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM "tiendas" [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-11-19 15:59:03) [GET]
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `acts_as_mappable' for #<Class:0x104389690>):
+  app/models/tienda.rb:2
+  app/controllers/tiendas_controller.rb:27:in `new'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-11-19 16:00:42) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `acts_as_mappable' for #<Class:0x10419c580>):
+  app/models/tienda.rb:2
+  app/controllers/tiendas_controller.rb:27:in `new'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (154.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-11-19 16:01:24) [GET]
+Rendering template within layouts/tiendas
+Rendering tiendas/new
+Completed in 77ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/tiendas/new]
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-11-19 16:01:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zGn45p3+YMqJsip81O4qRzDcW9KJvVonuM+X5FzTAjI=", "tienda"=>{"nombre"=>"sambil", "direccion"=>"cc sambil caracas"}}
+  [4;36;1mTienda Create (0.5ms)[0m   [0;1mINSERT INTO "tiendas" ("created_at", "nombre", "updated_at", "direccion") VALUES('2009-11-19 21:01:32', 'sambil', '2009-11-19 21:01:32', 'cc sambil caracas')[0m
+Redirected to http://127.0.0.1:3000/tiendas/1
+Completed in 25ms (DB: 0) | 302 Found [http://127.0.0.1/tiendas]
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:01:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM "tiendas" WHERE ("tiendas"."id" = 1) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 28ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/tiendas/1]
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-11-19 16:01:40) [GET]
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM "tiendas" [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Completed in 134ms (View: 120, DB: 1) | 200 OK [http://127.0.0.1/tiendas]
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-11-19 16:01:40) [GET]
+  [4;35;1mTienda Load (0.7ms)[0m   [0mSELECT * FROM "tiendas" [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/tiendas]
+
+
+Processing TiendasController#destroy (for 127.0.0.1 at 2009-11-19 16:01:44) [DELETE]
+  Parameters: {"authenticity_token"=>"zGn45p3+YMqJsip81O4qRzDcW9KJvVonuM+X5FzTAjI=", "id"=>"1"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM "tiendas" WHERE ("tiendas"."id" = 1) [0m
+  [4;35;1mTienda Destroy (0.3ms)[0m   [0mDELETE FROM "tiendas" WHERE "id" = 1[0m
+Redirected to http://127.0.0.1:3000/tiendas
+Completed in 27ms (DB: 1) | 302 Found [http://127.0.0.1/tiendas/1]
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-11-19 16:01:44) [GET]
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM "tiendas" [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTiendas (20091119205342)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDROP TABLE "tiendas"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20091119205342'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTiendas (20091119205342)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "tiendas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "direccion" varchar(255), "lat" integer, "lng" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091119205342')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tiendas")[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-11-19 16:02:44) [GET]
+Rendering template within layouts/tiendas
+Rendering tiendas/new
+Completed in 105ms (View: 90, DB: 0) | 200 OK [http://127.0.0.1/tiendas/new]
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-11-19 16:02:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zGn45p3+YMqJsip81O4qRzDcW9KJvVonuM+X5FzTAjI=", "tienda"=>{"nombre"=>"sambil", "direccion"=>"cc sambil caracas"}}
+  [4;35;1mTienda Create (0.4ms)[0m   [0mINSERT INTO "tiendas" ("created_at", "nombre", "updated_at", "lng", "direccion", "lat") VALUES('2009-11-19 21:02:48', 'sambil', '2009-11-19 21:02:48', NULL, 'cc sambil caracas', NULL)[0m
+Redirected to http://127.0.0.1:3000/tiendas/1
+Completed in 26ms (DB: 0) | 302 Found [http://127.0.0.1/tiendas]
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:02:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM "tiendas" WHERE ("tiendas"."id" = 1) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 22ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/tiendas/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (129.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (172.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTiendas (20091119205342)
+  [4;36;1mSQL (130.2ms)[0m   [0;1mCREATE TABLE `tiendas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nombre` varchar(255), `direccion` varchar(255), `lat` int(11), `lng` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091119205342')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `tiendas`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTiendas (20091119205342)
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-11-19 16:04:03) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/new
+Completed in 68ms (View: 53, DB: 2) | 200 OK [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-11-19 16:04:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zGn45p3+YMqJsip81O4qRzDcW9KJvVonuM+X5FzTAjI=", "tienda"=>{"nombre"=>"sambil", "direccion"=>"cc sambil caracas"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTienda Create (0.3ms)[0m   [0mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-11-19 21:04:07', 'sambil', '2009-11-19 21:04:07', NULL, 'cc sambil caracas', NULL)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/1
+Completed in 97ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:04:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mTienda Load (0.9ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 1) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 31ms (View: 15, DB: 3) | 200 OK [http://127.0.0.1/tiendas/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-11-19 16:06:07) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zGn45p3+YMqJsip81O4qRzDcW9KJvVonuM+X5FzTAjI=", "tienda"=>{"nombre"=>"sambil", "direccion"=>"cc sambil caracas"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Google geocoding. Address: cc sambil caracas. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>cc sambil caracas</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Caracas, Venezuela</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>VE</CountryNameCode><CountryName>Venezuela</CountryName><AdministrativeArea><AdministrativeAreaName>Miranda</AdministrativeAreaName><Locality><LocalityName>Caracas</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="10.5838078" south="10.4082673" east="-66.7702176" west="-67.0263364" />
+    </ExtendedData>
+    <Point><coordinates>-66.8982770,10.4960500,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Create (0.3ms)[0m   [0mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-11-19 21:06:07', 'sambil', '2009-11-19 21:06:07', -66, 'cc sambil caracas', 10)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/2
+Completed in 450ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:06:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mTienda Load (1.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 117ms (View: 100, DB: 3) | 200 OK [http://127.0.0.1/tiendas/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:12:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 31ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/tiendas/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:12:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTienda Columns (127.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 153ms (View: 9, DB: 128) | 200 OK [http://127.0.0.1/tiendas/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:12:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 31ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/tiendas/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:13:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 31ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/tiendas/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:14:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mTienda Load (0.2ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 31ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/tiendas/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-11-19 16:14:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 2) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Completed in 23ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/tiendas/2]
