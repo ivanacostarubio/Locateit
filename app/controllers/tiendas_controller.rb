@@ -4,6 +4,18 @@ class TiendasController < ApplicationController
   def index
     @tiendas = Tienda.all
 
+    @map = GoogleMap::Map.new
+    @map.zoom = 8 #200km
+    
+    @tiendas.each do |tienda|
+      @map.markers << GoogleMap::Marker.new(:map => @map, 
+                                           :lat => tienda.lat, 
+                                           :lng => tienda.lng,
+                                           :marker_icon_path => '/images/estrella.png',
+                                           :marker_hover_text => tienda.nombre
+                                           )
+    end
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @tiendas }
@@ -14,6 +26,15 @@ class TiendasController < ApplicationController
   # GET /tiendas/1.xml
   def show
     @tienda = Tienda.find(params[:id])
+  
+    @map = GoogleMap::Map.new
+    @map.zoom = 8 #200km
+    @map.markers << GoogleMap::Marker.new(:map => @map, 
+                                         :lat => @tienda.lat, 
+                                         :lng => @tienda.lng,
+                                         :marker_icon_path => '/images/estrella.png'
+                                         )
+    
 
     respond_to do |format|
       format.html # show.html.erb

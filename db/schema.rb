@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(:version => 20091119205342) do
   create_table "tiendas", :force => true do |t|
     t.string   "nombre"
     t.string   "direccion"
-    t.integer  "lat"
-    t.integer  "lng"
+    t.float    "lat"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

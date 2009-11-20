@@ -12,3 +12,5 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
 
 end
+
+GOOGLE_APPLICATION_ID = "ABQIAAAAwk9cM7XgXv55U_ljM6-oAhRULQ7kQx9rWeXH9H7y5EoMxImrQBQ6oTzAj49HPy7vN5Qra_nl9czwqQ"

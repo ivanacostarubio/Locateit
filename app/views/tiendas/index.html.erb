@@ -1,22 +1,13 @@
-<h1>Listing tiendas</h1>
+<center>
+  <h1>Nuestras Tiendas</h1>
+</center>
 
 <table>
-  <tr>
-    <th>Nombre</th>
-    <th>Direccion</th>
-  </tr>
-
 <% @tiendas.each do |tienda| %>
-  <tr>
-    <td><%=h tienda.nombre %></td>
-    <td><%=h tienda.direccion %></td>
-    <td><%= link_to 'Show', tienda %></td>
-    <td><%= link_to 'Edit', edit_tienda_path(tienda) %></td>
-    <td><%= link_to 'Destroy', tienda, :confirm => 'Are you sure?', :method => :delete %></td>
+  <tr height="50px">
+    <td width="200px;"><%=h tienda.nombre %></td>
+    <td width="400px;"><%=h tienda.direccion %></td>
+
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New tienda', new_tienda_path %>
