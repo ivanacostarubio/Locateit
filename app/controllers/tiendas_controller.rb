@@ -1,13 +1,16 @@
 class TiendasController < ApplicationController
   before_filter :cuantos_churromanias
+  geocode_ip_address
   
   # GET /tiendas
   # GET /tiendas.xml
   def index
     @tiendas = Tienda.all
+#    @tiendas = @tiendas.sort_by_distance_from(session[:geo_location])
+    
     @tienda = Tienda.new
     @map = GoogleMap::Map.new
-    @map.zoom = 8 #200km
+    @map.zoom = 4 #200km
     
     @tiendas.each do |tienda|
       @map.markers << GoogleMap::Marker.new(:map => @map, 

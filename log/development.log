@@ -4668,3 +4668,1084 @@ Rendering template within layouts/tiendas
 Rendering tiendas/index
 Rendered tiendas/_new (6.5ms)
 Completed in 39ms (View: 19, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 17:51:27) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"Sambil Caracas", "direccion"=>"Sambil Caracas, Venezuela"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Sambil Caracas, Venezuela. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Sambil Caracas, Venezuela</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Caracas, Venezuela</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>VE</CountryNameCode><CountryName>Venezuela</CountryName><AdministrativeArea><AdministrativeAreaName>Miranda</AdministrativeAreaName><Locality><LocalityName>Caracas</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="10.5838078" south="10.4082673" east="-66.7702176" west="-67.0263364" />
+    </ExtendedData>
+    <Point><coordinates>-66.8982770,10.4960500,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (48.2ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 22:51:27', 'Sambil Caracas', '2009-12-03 22:51:27', -66.898277, 'Sambil Caracas, Venezuela', 10.49605)[0m
+  [4;35;1mSQL (12.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/3
+Completed in 548ms (DB: 64) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 17:51:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (8.1ms)
+Completed in 40ms (View: 21, DB: 2) | 200 OK [http://127.0.0.1/tiendas/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 17:51:33) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 17:53:30) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.5ms)
+Completed in 41ms (View: 20, DB: 4) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 17:53:35) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 17:53:38) [GET]
+  [4;35;1mTienda Columns (20.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 50ms (View: 11, DB: 22) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 17:58:51) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.8ms)
+Completed in 31ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:00:37) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.7ms)
+Completed in 31ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:01:36) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:01:44) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:01:50) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 115ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:01:55) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:01:59) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.7ms)
+Completed in 32ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:03) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 32ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:07) [GET]
+  [4;35;1mTienda Columns (6.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.9ms)
+Completed in 38ms (View: 12, DB: 9) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:10) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.9ms)
+Completed in 34ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:14) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.5ms)
+Completed in 30ms (View: 11, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:17) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 32ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:02:40) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"Miami Beach Churros", "direccion"=>"Miami beach"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Miami beach. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Miami beach</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Miami Beach, FL, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Miami-Dade</SubAdministrativeAreaName><Locality><LocalityName>Miami Beach</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.8308333" south="25.7504610" east="-80.0660158" west="-80.1940752" />
+    </ExtendedData>
+    <Point><coordinates>-80.1300455,25.7906540,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:02:41', 'Miami Beach Churros', '2009-12-03 23:02:41', -80.1300455, 'Miami beach', 25.790654)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/4
+Completed in 288ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:02:41) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 4) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.7ms)
+Completed in 34ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:43) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:02:45) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:03:01) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"El recreo", "direccion"=>"Centro Comercial el recreo, Caracas Venezuela"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Centro Comercial el recreo, Caracas Venezuela. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Centro Comercial el recreo, Caracas Venezuela</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Caracas, Venezuela</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>VE</CountryNameCode><CountryName>Venezuela</CountryName><AdministrativeArea><AdministrativeAreaName>Miranda</AdministrativeAreaName><Locality><LocalityName>Caracas</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="10.5838078" south="10.4082673" east="-66.7702176" west="-67.0263364" />
+    </ExtendedData>
+    <Point><coordinates>-66.8982770,10.4960500,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:03:01', 'El recreo', '2009-12-03 23:03:01', -66.898277, 'Centro Comercial el recreo, Caracas Venezuela', 10.49605)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/5
+Completed in 283ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:03:01) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 5) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (8.2ms)
+Completed in 34ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:03:04) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 32ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:03:05) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.8ms)
+Completed in 113ms (View: 93, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:03:26) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"Plaza Mayor", "direccion"=>"Centro Comercial Plaza Mayor, Puerto la Cruz, Venezuela"}}
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Centro Comercial Plaza Mayor, Puerto la Cruz, Venezuela. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Centro Comercial Plaza Mayor, Puerto la Cruz, Venezuela</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Puerto la Cruz, Venezuela</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>VE</CountryNameCode><CountryName>Venezuela</CountryName><AdministrativeArea><AdministrativeAreaName>Anzoátegui</AdministrativeAreaName><Locality><LocalityName>Puerto La Cruz</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="10.2903903" south="10.1146855" east="-64.5168076" west="-64.7729264" />
+    </ExtendedData>
+    <Point><coordinates>-64.6448670,10.2025500,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:03:26', 'Plaza Mayor', '2009-12-03 23:03:26', -64.644867, 'Centro Comercial Plaza Mayor, Puerto la Cruz, Venezuela', 10.20255)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/6
+Completed in 308ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:03:27) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 6) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (8.9ms)
+Completed in 35ms (View: 15, DB: 3) | 200 OK [http://127.0.0.1/tiendas/6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:03:28) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:03:29) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (7.1ms)
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:04:06) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"El Calor Mcbo", "direccion"=>"Maracaibo Venezuela"}}
+  [4;35;1mTienda Columns (6.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Maracaibo Venezuela. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Maracaibo Venezuela</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Maracaibo, Venezuela</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>VE</CountryNameCode><CountryName>Venezuela</CountryName><AdministrativeArea><AdministrativeAreaName>Zulia</AdministrativeAreaName><Locality><LocalityName>Maracaibo</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="10.7327551" south="10.5572997" east="-71.5090946" west="-71.7652134" />
+    </ExtendedData>
+    <Point><coordinates>-71.6371540,10.6450400,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:04:06', 'El Calor Mcbo', '2009-12-03 23:04:06', -71.637154, 'Maracaibo Venezuela', 10.64504)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/7
+Completed in 271ms (DB: 9) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:04:06) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 7) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.8ms)
+Completed in 35ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/7]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:04:08) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 32ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:04:09) [GET]
+  [4;35;1mTienda Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.7ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (8.0ms)
+Completed in 36ms (View: 13, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:04:28) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"El Centro Comercial", "direccion"=>"Valencia Venezuela"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Valencia Venezuela. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Valencia Venezuela</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Valencia, Venezuela</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>VE</CountryNameCode><CountryName>Venezuela</CountryName><AdministrativeArea><AdministrativeAreaName>Carabobo</AdministrativeAreaName><Locality><LocalityName>Valencia</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="10.2660670" south="10.0903488" east="-67.8750536" west="-68.1311724" />
+    </ExtendedData>
+    <Point><coordinates>-68.0031130,10.1782200,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:04:28', 'El Centro Comercial', '2009-12-03 23:04:28', -68.003113, 'Valencia Venezuela', 10.17822)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/8
+Completed in 261ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:04:28) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 8) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.9ms)
+Completed in 34ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/8]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:04:30) [GET]
+  [4;35;1mTienda Columns (43.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.5ms)
+Completed in 79ms (View: 12, DB: 44) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:04:32) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:05:17) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"La habana Cuba", "direccion"=>"La habana cuba"}}
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: La habana cuba. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>La habana cuba</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Havana, Cuba</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>CU</CountryNameCode><CountryName>Cuba</CountryName><Locality><LocalityName>La Habana</LocalityName></Locality></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="23.2153946" south="23.0512217" east="-82.2386073" west="-82.4947261" />
+    </ExtendedData>
+    <Point><coordinates>-82.3666667,23.1333333,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:05:17', 'La habana Cuba', '2009-12-03 23:05:17', -82.3666667, 'La habana cuba', 23.1333333)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/9
+Completed in 265ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:05:17) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 9) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (8.4ms)
+Completed in 34ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/9]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:05:18) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (7.8ms)
+Completed in 35ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:05:19) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 32ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:05:28) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"Puerto Rico", "direccion"=>"Puerto Rico"}}
+  [4;35;1mTienda Columns (96.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Puerto Rico. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Puerto Rico</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Puerto Rico</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>PR</CountryNameCode><CountryName>Puerto Rico</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="18.8978019" south="17.5412208" east="-65.5656739" west="-67.6146241" />
+    </ExtendedData>
+    <Point><coordinates>-66.5901490,18.2208330,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:05:28', 'Puerto Rico', '2009-12-03 23:05:28', -66.590149, 'Puerto Rico', 18.220833)[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/10
+Completed in 579ms (DB: 106) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:05:28) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mTienda Columns (222.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 10) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.8ms)
+Completed in 259ms (View: 14, DB: 223) | 200 OK [http://127.0.0.1/tiendas/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:05:30) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 34ms (View: 12, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:05:30) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.6ms)
+Completed in 35ms (View: 12, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-03 18:05:46) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"yYiMXXUNjWjL3uGPyOVG0iFQdGo4UAJmJzT09ZciQDw=", "tienda"=>{"nombre"=>"La Dominicana", "direccion"=>"Republica Dominicana"}}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: Republica Dominicana. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Republica Dominicana</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Dominican Republic</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>DO</CountryNameCode><CountryName>Dominican Republic</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="20.0827100" south="17.3778490" east="-68.1137008" west="-72.2116012" />
+    </ExtendedData>
+    <Point><coordinates>-70.1626510,18.7356930,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `direccion`, `lat`) VALUES('2009-12-03 23:05:46', 'La Dominicana', '2009-12-03 23:05:46', -70.162651, 'Republica Dominicana', 18.735693)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/11
+Completed in 326ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:05:46) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 11) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.8ms)
+Completed in 34ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/11]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:05:48) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.7ms)
+Completed in 32ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:05:49) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (7.0ms)
+Completed in 35ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:06:35) [GET]
+  [4;35;1mTienda Columns (145.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `name' for #<Tienda:0x10332bf00>) on line #7 of app/views/tiendas/index.html.erb:
+4: 
+5: <% @tiendas.each do |tienda| %>
+6:   <div class="info">
+7:     <h2><%= link_to tienda.name, tienda%></h2>
+8:     <%=h tienda.direccion %>
+9:   </div>
+10: <% end %>
+
+    app/views/tiendas/index.html.erb:7
+    app/views/tiendas/index.html.erb:5:in `each'
+    app/views/tiendas/index.html.erb:5
+    app/controllers/tiendas_controller.rb:21:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:06:42) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.1ms)
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:06:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.9ms)
+Completed in 33ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/tiendas/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:06:54) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.1ms)
+Completed in 40ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-03 18:06:56) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 4) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (7.9ms)
+Completed in 33ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/tiendas/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:06:59) [GET]
+  [4;35;1mTienda Columns (28.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.1ms)
+Completed in 67ms (View: 20, DB: 30) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:08:51) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.0ms)
+Completed in 40ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:09:55) [GET]
+  [4;35;1mTienda Columns (8.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.2ms)
+Completed in 47ms (View: 19, DB: 10) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:10:02) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.3ms)
+Completed in 41ms (View: 21, DB: 3) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:10:30) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.1ms)
+Completed in 47ms (View: 27, DB: 2) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:10:52) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (10.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.0ms)
+Completed in 51ms (View: 20, DB: 13) | 200 OK [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:10:58) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.2ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (6.1ms)
+Completed in 41ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:13:36) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'distance' in 'order clause': SELECT * FROM `tiendas` ORDER BY distance[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'distance' in 'order clause': SELECT * FROM `tiendas`  ORDER BY distance):
+  app/controllers/tiendas_controller.rb:7:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:18:00) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `find_closet' for #<Class:0x103350378>):
+  app/controllers/tiendas_controller.rb:8:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:18:25) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = '--- :nearest\n') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Tienda with ID=nearest):
+  app/controllers/tiendas_controller.rb:8:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:18:41) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = '--- :nearest\n') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Tienda with ID=nearest):
+  app/controllers/tiendas_controller.rb:8:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:19:58) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `sort_by_distance_from' for #<Class:0x10341d670>):
+  app/controllers/tiendas_controller.rb:8:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:20:31) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+
+ArgumentError ( (NilClass) cannot be normalized to a LatLng. We tried interpreting it as an array, string, Mappable, etc., but no dice.):
+  geokit (1.5.0) lib/geokit/mappable.rb:292:in `normalize'
+  geokit (1.5.0) lib/geokit/mappable.rb:38:in `distance_between'
+  geokit (1.5.0) lib/geokit/mappable.rb:178:in `distance_to'
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:20:52) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+
+NameError (undefined local variable or method `sessions' for #<TiendasController:0x1037b9810>):
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:20:56) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+
+ArgumentError ( (NilClass) cannot be normalized to a LatLng. We tried interpreting it as an array, string, Mappable, etc., but no dice.):
+  geokit (1.5.0) lib/geokit/mappable.rb:292:in `normalize'
+  geokit (1.5.0) lib/geokit/mappable.rb:38:in `distance_between'
+  geokit (1.5.0) lib/geokit/mappable.rb:178:in `distance_to'
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-03 18:21:28) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (5.8ms)
+Completed in 397ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/]
