@@ -6,20 +6,35 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Tiendas Churromania</title>
   <%= stylesheet_link_tag 'scaffold', 'styles' %>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <%= javascript_include_tag 'application' %>
 </head>
 <body>
 
-<div class="logo"></div>
-
-<div class="mapa"><%= @map.div %></div>
-
-<%= @map.to_html %>
-
-<div class="bottom">
-  <div class="table">
-    <%= yield %>
+  <div class="logo">
+    <%= image_tag '/images/logo.png' %>
+    <%= image_tag '/images/locations.png' %>
+    
+    <div class="new_franquicia">
+      Crear una franquicia
+    </div>
+    
+    <div class="new_franquicia_form" style="display: none;">
+      <%= render :partial => "/tiendas/new" %>
+    </div>
+    
     <p style="color: green"><%= flash[:notice] %></p>
   </div>
-</div>
+
+
+  <div class="mapa">
+    <%= @map.div %>
+    <%= @map.to_html %>
+  </div>
+  
+  <div class="tiendas">
+      <%= yield %>
+  </div>
+  
 </body>
 </html>

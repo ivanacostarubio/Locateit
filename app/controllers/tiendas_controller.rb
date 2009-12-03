@@ -1,9 +1,11 @@
 class TiendasController < ApplicationController
+  before_filter :cuantos_churromanias
+  
   # GET /tiendas
   # GET /tiendas.xml
   def index
     @tiendas = Tienda.all
-
+    @tienda = Tienda.new
     @map = GoogleMap::Map.new
     @map.zoom = 8 #200km
     
@@ -48,7 +50,7 @@ class TiendasController < ApplicationController
     @tienda = Tienda.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html 
       format.xml  { render :xml => @tienda }
     end
   end

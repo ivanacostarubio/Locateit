@@ -1,13 +1,10 @@
-<center>
-  <h1>Nuestras Tiendas</h1>
-</center>
+<div class="info">
+  <h1>Hay <%= @numero_churromanias %> churromanias </h1>
+</div>
 
-<table>
 <% @tiendas.each do |tienda| %>
-  <tr height="50px">
-    <td width="200px;"><%=h tienda.nombre %></td>
-    <td width="400px;"><%=h tienda.direccion %></td>
-
-  </tr>
+  <div class="info">
+    <h2><%=h tienda.nombre %></h2>
+    <%=h tienda.direccion %>
+  </div>
 <% end %>
-</table>

@@ -7,4 +7,10 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  private 
+  
+  def cuantos_churromanias
+    @numero_churromanias = Tienda.count
+  end
 end

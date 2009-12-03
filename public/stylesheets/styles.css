@@ -1,13 +1,48 @@
-body{ background: url("http://churromania.com/templates/images/bannerdown.png") #429dd4 top; margin: 0px;}
+body{ background: #f4f5f5; margin: 0px; font-family: arial;}
 
-.logo{ margin: 0em auto; width: 100%; height: 8em; background: url("/images/logo.png"); }
-.bottom{ background: white; height: 100%; border-bottom: 4px solid #183670;}
+.logo{ position: fixed; top: 0px; margin: 0em auto; width: 100%; height: 8em; z-index: 0; padding-left: 2em;
+-moz-box-shadow: 3px 3px 3px #666;
+-webkit-box-shadow: 3px 3px 3px #666;
+box-shadow: 3px 3px 3px #666;}
 
-.mapa{ border-bottom: 4px solid #183670; border-top: 4px solid #183670; width: 100%; height: 300px; }
+.mapa{ position: fixed; top: 8em; border-bottom: 4px solid #183670; border-top: 1px solid #183670; width: 75%; height: 700px; float: left;
+ 			z-index: -1;}
 
-.table{ width: 700px; margin: 0 auto;}
-h1{ width: 100%; background: #a4cfe4; padding: .5em; color: white; margin: 0px;}
-table{ text-align: center; }
+.tiendas{ position: fixed; right: 0px; top: 8em; width: 25%; float: left; border-top: 3px solid #183670; border-left: 1px solid black; z-index: -10;}
 
-td {font-size: 1.3em;}
+.info{ width: 90%; margin: 0 auto; border-bottom: 1px solid #003a76; line-height: 3em;}
+
+.new_franquicia{ position: absolute; right: 100px; top: 2em;  color: white; padding: .5em 2em .5em .8em; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	border-radius: 10px;
+	background: #003a76 no-repeat 95% 60%  url("/images/flecha_abajo.png");}
+	
+.new_franquicia_form {  position: absolute; right: 100px; top: 4em;  color: white; padding: .5em 2em .5em .8em; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px;
+	background: #003a76;
+	z-index: 10;}
+	
+	
+
+h1{ font-size: 24px; font-weight: 100;}
+h2{ background: url("/images/estrella.png") no-repeat; padding-left: 2em;}
+
+.footer{ text-align: center; position: fixed; bottom: 0px; background: #003a76; width: 100%; height: 1em; padding: .7em;}
+.footer a{ color: white; font-size: 1.1em;}
+
+
+input{ background: #ccd8e4; border: 0px; padding: .7em; font-size: 1em;}
+.submit{ background: #edef07; color: black;
+					-moz-border-radius: 5px; 
+					-webkit-border-radius: 5px; 
+					border-radius: 5px;
+					}
+
+.submit:hover{ color: #edef07; background: none;}
+
+/*td {font-size: 1.3em;}
 table a{ padding: 1em; background: #183670; color: white; text-decoration: none;}
+h1{ width: 100%; background: #a4cfe4; padding: .5em; color: white; margin: 0px;}
