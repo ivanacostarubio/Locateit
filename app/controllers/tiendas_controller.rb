@@ -61,6 +61,15 @@ class TiendasController < ApplicationController
   # GET /tiendas/1/edit
   def edit
     @tienda = Tienda.find(params[:id])
+    
+    @map = GoogleMap::Map.new
+    @map.zoom = 8 #200km
+    @map.markers << GoogleMap::Marker.new(:map => @map, 
+                                          :lat => @tienda.lat, 
+                                          :lng => @tienda.lng,
+                                          :marker_icon_path => '/images/estrella.png'
+                                          )
+    
   end
 
   # POST /tiendas
