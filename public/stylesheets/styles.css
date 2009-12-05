@@ -21,6 +21,7 @@ body{ background: #f4f5f5; margin: 0px; font-family: arial;}
 .info h2{ font-weight: 100; background: url("/images/estrella.png") no-repeat; padding-left: 2em;}
 .info h2 a, a{ text-decoration: none; color: #003a76;}
 .info h2 a:visited, a:visited;{ color: #003a76;}
+.info h2 a:hover{ color: yellow;}
 
 
 .notices{ position: absolute; top: 2em; right: 400px;}

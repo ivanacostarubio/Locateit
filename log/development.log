@@ -11526,3 +11526,27 @@ Rendering template within layouts/tiendas
 Rendering tiendas/index
 Rendered tiendas/_new (10.4ms)
 Completed in 474ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:52:20) [GET]
+  [4;35;1mTienda Columns (38.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (35.6ms)
+Completed in 971ms (View: 243, DB: 39) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:52:33) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.1ms)
+Completed in 536ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
