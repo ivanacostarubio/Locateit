@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091119205342) do
+ActiveRecord::Schema.define(:version => 20091204210932) do
 
   create_table "tiendas", :force => true do |t|
     t.string   "nombre"
@@ -18,6 +18,10 @@ ActiveRecord::Schema.define(:version => 20091119205342) do
     t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "ciudad"
+    t.string   "estado"
+    t.string   "codigo_postal"
+    t.string   "pais"
   end
 
 end

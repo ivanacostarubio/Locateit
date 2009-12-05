@@ -10,6 +10,23 @@
     <%= f.text_field :direccion %>
   </p>
   <p>
+    <%= f.label :ciudad %><br />
+    <%= f.text_field :ciudad %>
+  </p>
+  <p>
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </p>
+  <p>
+    <%= f.label :codigo_postal %><br />
+    <%= f.text_field :codigo_postal %>
+  </p>
+  <p>
+    <%= f.label :pais %><br />
+    <%= f.text_field :pais %>
+  </p>
+  
+  <p>
     <%= f.submit 'sugerir franquicia', :class=> "submit" %>
   </p>
 <% end %>

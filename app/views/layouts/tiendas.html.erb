@@ -12,7 +12,7 @@
 <body>
 
   <div class="logo">
-    <%= image_tag '/images/logo.png' %>
+    <%= link_to image_tag('/images/logo.png'), '/' %>
     <%= image_tag '/images/locations.png' %>
     
     <div class="new_franquicia">
@@ -23,7 +23,10 @@
       <%= render :partial => "/tiendas/new" %>
     </div>
     
-    <p style="color: green"><%= flash[:notice] %></p>
+    <div class="notices">
+      <p style="color: blue;"><%= flash[:notice] %><p>
+      <p style="color: red;"><%= flash[:error] %></p>
+    </div>
   </div>
 
 

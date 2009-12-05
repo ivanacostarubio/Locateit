@@ -1,18 +1,21 @@
 <%= @map.to_html %>
+
 <div class="mapa">
   <%= @map.div %>
 </div>
 
 
-<p>
-  <b>Nombre:</b>
-  <%=h @tienda.nombre %>
-</p>
+<div class="info">
+  <h1>Hay <%= @numero_churromanias %> churromanias </h1>
+</div>
 
-<p>
-  <b>Direccion:</b>
+<div class="info">
+  <h2><%= link_to @tienda.nombre, @tienda%></h2>
   <%=h @tienda.direccion %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_tienda_path(@tienda) %> |
-<%= link_to 'Back', tiendas_path %>
+
+<% if params[:admin] == "yes" %>
+  <%= link_to 'Editar', edit_tienda_path(@tienda) %> |
+  <%= link_to 'Borrar', @tienda ,:confirm  => '¿Seguro?', :method  => :delete %>
+<% end %>

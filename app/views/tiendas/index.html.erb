@@ -4,7 +4,7 @@
 
 <% @tiendas.each do |tienda| %>
   <div class="info">
-    <h2><%= link_to tienda.nombre, tienda%></h2>
-    <%=h tienda.direccion %>
+    <h2><%= link_to tienda.nombre.upcase, tienda%></h2>
+    <%=h tienda.direccion.upcase %>
   </div>
 <% end %>

@@ -5,22 +5,12 @@ class TiendasController < ApplicationController
   # GET /tiendas
   # GET /tiendas.xml
   def index
-    @tiendas = Tienda.all
-#    @tiendas = @tiendas.sort_by_distance_from(session[:geo_location])
-    
+    @tiendas = Tienda.all  
     @tienda = Tienda.new
-    @map = GoogleMap::Map.new
-    @map.zoom = 4 #200km
     
-    @tiendas.each do |tienda|
-      @map.markers << GoogleMap::Marker.new(:map => @map, 
-                                           :lat => tienda.lat, 
-                                           :lng => tienda.lng,
-                                           :marker_icon_path => '/images/estrella.png',
-                                           :marker_hover_text => tienda.nombre
-                                           )
-    end
-    
+    dibujar_tiendas(@tiendas)
+   
+   
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @tiendas }
@@ -31,16 +21,8 @@ class TiendasController < ApplicationController
   # GET /tiendas/1.xml
   def show
     @tienda = Tienda.find(params[:id])
-  
-    @map = GoogleMap::Map.new
-    @map.zoom = 8 #200km
-    @map.markers << GoogleMap::Marker.new(:map => @map, 
-                                         :lat => @tienda.lat, 
-                                         :lng => @tienda.lng,
-                                         :marker_icon_path => '/images/estrella.png'
-                                         )
+    dibujar_tienda(@tienda)
     
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @tienda }
@@ -83,7 +65,8 @@ class TiendasController < ApplicationController
         format.html { redirect_to(@tienda) }
         format.xml  { render :xml => @tienda, :status => :created, :location => @tienda }
       else
-        format.html { render :action => "new" }
+        flash[:error] = "Upsss... Google no pudo codificar la direccion. Prueba haciendo la direccion mas general."
+        format.html { redirect_to :back }
         format.xml  { render :xml => @tienda.errors, :status => :unprocessable_entity }
       end
     end
@@ -117,4 +100,25 @@ class TiendasController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  
+  private
+  
+  def dibujar_tiendas(tiendas)
+    @map = GoogleMap::Map.new
+    @map.zoom = 4 #200km
+
+    @tiendas.each do |tienda|
+      @map.markers << GoogleMap::Marker.new(:map => @map,  :lat => tienda.lat,  :lng => tienda.lng,
+                                          :marker_icon_path => '/images/estrella.png', :marker_hover_text => tienda.nombre)
+    end
+  end
+  
+  def dibujar_tienda(tienda)
+    @map = GoogleMap::Map.new
+    @map.zoom = 14 #200km
+    @map.markers << GoogleMap::Marker.new(:map => @map,:lat => @tienda.lat, 
+                                         :lng => @tienda.lng, :marker_icon_path => '/images/estrella.png')
+  end
+  
 end
