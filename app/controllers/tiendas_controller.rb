@@ -1,5 +1,5 @@
 class TiendasController < ApplicationController
-  before_filter :cuantos_churromanias
+  before_filter :cuantos_churromanias, :procesar_ciudades
   geocode_ip_address
   
   # GET /tiendas
@@ -106,7 +106,7 @@ class TiendasController < ApplicationController
   
   def dibujar_tiendas(tiendas)
     @map = GoogleMap::Map.new
-    @map.zoom = 4 #200km
+    @map.zoom = 5 #200km
 
     @tiendas.each do |tienda|
       @map.markers << GoogleMap::Marker.new(:map => @map,  :lat => tienda.lat,  :lng => tienda.lng,

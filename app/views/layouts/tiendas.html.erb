@@ -15,13 +15,31 @@
     <%= link_to image_tag('/images/logo.png'), '/' %>
     <%= image_tag '/images/locations.png' %>
     
-    <div class="new_franquicia">
-      Crear una franquicia
+    <div class="ciudades">
+      Todas las Ciudades
     </div>
+    
+    <div class="ciudades_form" style="display: none;">
+      <% @ciudades.each do |ciudad| %>
+        <div class="ciudad"><span><%= link_to ciudad, '/' %></span></div>
+      <% end %>
+    </div>
+    
+    
+    <div class="new_franquicia">
+      Sugerir Franquicia
+    </div>    
+    
     
     <div class="new_franquicia_form" style="display: none;">
       <%= render :partial => "/tiendas/new" %>
     </div>
+    
+    <div class="numero_tiendas">
+      <h1>Hay <%= @numero_churromanias %> churromanias </h1>
+    </div>
+    
+    
     
     <div class="notices">
       <p style="color: blue;"><%= flash[:notice] %><p>

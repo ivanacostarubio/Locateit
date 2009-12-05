@@ -9271,3 +9271,2258 @@ Rendering template within layouts/tiendas
 Rendering tiendas/index
 Rendered tiendas/_new (9.9ms)
 Completed in 480ms (View: 37, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:57:12) [GET]
+  [4;35;1mTienda Columns (34.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (45.8ms)
+Completed in 934ms (View: 178, DB: 36) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:57:45) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.9ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 420ms (View: 45, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:00) [GET]
+  [4;35;1mTienda Columns (131.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 532ms (View: 45, DB: 132) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:07) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 490ms (View: 45, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:21) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 432ms (View: 46, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:36) [GET]
+  [4;35;1mTienda Columns (19.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 441ms (View: 39, DB: 22) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:43) [GET]
+  [4;35;1mTienda Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 404ms (View: 35, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:52) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.7ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.2ms)
+Completed in 406ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:58:56) [GET]
+  [4;35;1mTienda Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 500ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 14:59:48) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 418ms (View: 36, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:00:18) [GET]
+  [4;35;1mTienda Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.8ms)
+Completed in 622ms (View: 42, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:00:33) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.2ms)
+Completed in 425ms (View: 43, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:00:49) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.0ms)
+Completed in 564ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:01:14) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 1394ms (View: 43, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:01:52) [GET]
+  [4;35;1mTienda Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.1ms)
+Completed in 849ms (View: 36, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:02:44) [GET]
+  [4;35;1mTienda Columns (162.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 633ms (View: 37, DB: 163) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:03:22) [GET]
+  [4;35;1mTienda Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 459ms (View: 35, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:03:57) [GET]
+  [4;35;1mTienda Columns (22.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 480ms (View: 35, DB: 24) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:04:37) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 522ms (View: 36, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:04:53) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 463ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:05:26) [GET]
+  [4;35;1mTienda Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (16.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 1014ms (View: 42, DB: 29) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:05:34) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 504ms (View: 35, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:05:47) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.7ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.4ms)
+Completed in 471ms (View: 38, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:11:42) [GET]
+  [4;35;1mTienda Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+  [4;36;1mSQL (60.1ms)[0m   [0;1mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined method `ciudad' for #<Class:0x103526dc8>) on line #20 of app/views/layouts/tiendas.html.erb:
+17:     
+18:     <div class="ciudades">
+19:       <% @tiendas.each do |tienda| %>
+20:         <%= link_to Tienda.ciudad, tiendas_path(tienda) %>
+21:       <% end %>
+22:     </div>
+23:       
+
+    app/views/layouts/tiendas.html.erb:20
+    app/views/layouts/tiendas.html.erb:19:in `each'
+    app/views/layouts/tiendas.html.erb:19
+    app/controllers/tiendas_controller.rb:14:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.7ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:11:51) [GET]
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 582ms (View: 166, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:12:02) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 503ms (View: 78, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:13:17) [GET]
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+
+NameError (uninitialized constant ApplicationController::Tiendas):
+  app/controllers/application_controller.rb:18:in `procesar_ciudades'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:13:26) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 1069ms (View: 68, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:16:10) [GET]
+  [4;36;1mTienda Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+
+NoMethodError (undefined method `unique!' for #<Array:0x1037d95e8>):
+  app/controllers/application_controller.rb:23:in `procesar_ciudades'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:16:16) [GET]
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+
+NoMethodError (undefined method `unique' for #<Array:0x10354f868>):
+  app/controllers/application_controller.rb:23:in `procesar_ciudades'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:16:56) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined local variable or method `ciudad' for #<ActionView::Base:0x103334510>) on line #20 of app/views/layouts/tiendas.html.erb:
+17:     
+18:     <div class="ciudades">
+19:       <% @ciudades.each do |ciudades| %>
+20:         <p><%= link_to ciudad, '/' %></p>
+21:       <% end %>
+22:     </div>
+23:       
+
+    app/views/layouts/tiendas.html.erb:20
+    app/views/layouts/tiendas.html.erb:19:in `each'
+    app/views/layouts/tiendas.html.erb:19
+    app/controllers/tiendas_controller.rb:14:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:17:12) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 542ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:18:21) [GET]
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 458ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:19:35) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.9ms)
+Completed in 469ms (View: 45, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:19:39) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 483ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:19:55) [GET]
+  [4;35;1mTienda Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 463ms (View: 40, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:20:03) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.3ms)
+Completed in 548ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:20:09) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.2ms)
+Completed in 454ms (View: 45, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:20:22) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.3ms)
+Completed in 546ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:20:50) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+
+NoMethodError (undefined method `capitalize' for #<Array:0x103552090>):
+  app/controllers/application_controller.rb:23:in `procesar_ciudades'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:21:03) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 521ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:29:28) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.7ms)
+Completed in 1227ms (View: 37, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:29:53) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 455ms (View: 39, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:30:26) [GET]
+  [4;36;1mTienda Columns (16.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.9ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.4ms)
+Completed in 580ms (View: 46, DB: 25) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:30:44) [GET]
+  [4;35;1mTienda Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 448ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:31:12) [GET]
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 538ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:31:26) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 467ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:31:29) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.0ms)
+Completed in 537ms (View: 39, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:31:35) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 453ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:31:44) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.1ms)
+Completed in 466ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:31:49) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 527ms (View: 120, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:32:01) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.3ms)
+Completed in 456ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:32:17) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 552ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:32:22) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 468ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:32:27) [GET]
+  [4;35;1mTienda Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.1ms)
+Completed in 457ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:32:32) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 453ms (View: 40, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:32:41) [GET]
+  [4;35;1mTienda Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 452ms (View: 40, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:33:37) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 575ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:34:40) [GET]
+  [4;35;1mTienda Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered layouts/_ciudades (2.1ms)
+Rendered tiendas/_new (9.7ms)
+Completed in 466ms (View: 54, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:35:03) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered layouts/_ciudades (2.1ms)
+Rendered tiendas/_new (10.8ms)
+Completed in 465ms (View: 53, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:35:18) [GET]
+  [4;35;1mTienda Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered layouts/_ciudades (1.3ms)
+Rendered tiendas/_new (10.7ms)
+Completed in 591ms (View: 41, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:35:29) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered layouts/_ciudades (1.3ms)
+Rendered tiendas/_new (10.9ms)
+Completed in 453ms (View: 39, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:35:33) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered layouts/_ciudades (1.3ms)
+Rendered tiendas/_new (11.2ms)
+Completed in 562ms (View: 41, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:35:49) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 455ms (View: 45, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:36:48) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 480ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:37:05) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (2.6ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.2ms)
+Completed in 543ms (View: 130, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:41:54) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 458ms (View: 44, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:42:10) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 537ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:53:46) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 510ms (View: 47, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-05 15:54:46) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 13) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (16.6ms)
+Completed in 461ms (View: 54, DB: 3) | 200 OK [http://127.0.0.1/tiendas/13]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:55:17) [GET]
+  [4;35;1mTienda Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 464ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-05 15:55:22) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 17) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (11.7ms)
+Completed in 425ms (View: 17, DB: 3) | 200 OK [http://127.0.0.1/tiendas/17]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:55:36) [GET]
+  [4;35;1mTienda Columns (34.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 525ms (View: 36, DB: 35) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:55:36) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 544ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:05) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 494ms (View: 55, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:31) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.4ms)
+Completed in 557ms (View: 50, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:32) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 496ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:32) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.3ms)
+Completed in 553ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:33) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.2ms)
+Completed in 460ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:49) [GET]
+  [4;36;1mTienda Columns (85.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 618ms (View: 39, DB: 86) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:57:58) [GET]
+  [4;35;1mTienda Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 474ms (View: 38, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:58:35) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.9ms)
+Completed in 535ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:58:51) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 466ms (View: 45, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:59:18) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.7ms)
+Completed in 482ms (View: 46, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 15:59:57) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.9ms)
+Completed in 576ms (View: 49, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:00:39) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.9ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 442ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:00:45) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.0ms)
+Completed in 454ms (View: 39, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:01:34) [GET]
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.5ms)
+Completed in 473ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:01:49) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 464ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:01:55) [GET]
+  [4;36;1mTienda Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 551ms (View: 39, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:02:06) [GET]
+  [4;35;1mTienda Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 471ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:02:11) [GET]
+  [4;36;1mTienda Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 565ms (View: 36, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:02:47) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.7ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 459ms (View: 39, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:03:33) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (2.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 447ms (View: 38, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:03:41) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 496ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:04:03) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 478ms (View: 49, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:04:33) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 580ms (View: 48, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:06:07) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 475ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:10:32) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 470ms (View: 47, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:11:01) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 534ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:11:14) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (1.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 450ms (View: 40, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:11:50) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 548ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:13:30) [GET]
+  [4;35;1mTienda Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 455ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:14:24) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.8ms)
+Completed in 475ms (View: 48, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:14:42) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 553ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:14:48) [GET]
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 455ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:14:52) [GET]
+  [4;35;1mTienda Columns (17.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 555ms (View: 41, DB: 19) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:15:01) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.7ms)
+Completed in 447ms (View: 39, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:15:06) [GET]
+  [4;35;1mTienda Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 472ms (View: 38, DB: 17) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:15:32) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.9ms)
+Completed in 537ms (View: 129, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:17:37) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 500ms (View: 45, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:18:19) [GET]
+  [4;36;1mTienda Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.9ms)
+Completed in 537ms (View: 39, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:18:32) [GET]
+  [4;35;1mTienda Columns (10.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (25.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT * FROM `tiendas` [0m
+
+NoMethodError (undefined method `uppcase' for "":String):
+  app/controllers/application_controller.rb:21:in `procesar_ciudades'
+  app/controllers/application_controller.rb:20:in `each'
+  app/controllers/application_controller.rb:20:in `procesar_ciudades'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:18:39) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.1ms)
+Completed in 543ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:19:27) [GET]
+  [4;36;1mTienda Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 460ms (View: 38, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:19:38) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 532ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:20:21) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 487ms (View: 41, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:21:03) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 489ms (View: 48, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:21:17) [GET]
+  [4;36;1mTienda Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.9ms)
+Completed in 536ms (View: 41, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:21:23) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.1ms)
+Completed in 448ms (View: 41, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:23:16) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 546ms (View: 37, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:23:53) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.0ms)
+Completed in 450ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:25:17) [GET]
+  [4;36;1mTienda Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.3ms)
+Completed in 476ms (View: 49, DB: 10) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:26:27) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.7ms)
+Completed in 443ms (View: 40, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:27:30) [GET]
+  [4;36;1mTienda Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.2ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 456ms (View: 46, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:28:21) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 564ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:28:40) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.3ms)
+Completed in 453ms (View: 39, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:28:56) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 450ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:29:15) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.9ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 534ms (View: 131, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:29:34) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 455ms (View: 46, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:29:58) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 542ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:30:04) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.6ms)
+Completed in 456ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:30:18) [GET]
+  [4;36;1mTienda Columns (157.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.7ms)
+Completed in 629ms (View: 45, DB: 160) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:30:20) [GET]
+  [4;35;1mTienda Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 452ms (View: 40, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:30:45) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.9ms)
+Completed in 447ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:30:57) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.9ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.2ms)
+Completed in 546ms (View: 40, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:31:22) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.7ms)
+Completed in 499ms (View: 38, DB: 53) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:31:42) [GET]
+  [4;35;1mTienda Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 547ms (View: 39, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:31:57) [GET]
+  [4;36;1mTienda Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.1ms)
+Completed in 466ms (View: 39, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:32:03) [GET]
+  [4;35;1mTienda Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (1.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 453ms (View: 39, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:32:55) [GET]
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 542ms (View: 119, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:33:14) [GET]
+  [4;35;1mTienda Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 464ms (View: 36, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:33:37) [GET]
+  [4;36;1mTienda Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 537ms (View: 39, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:34:03) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.7ms)
+Completed in 471ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:34:29) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 469ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:34:45) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 454ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:35:05) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 459ms (View: 36, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:35:34) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 524ms (View: 36, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:35:54) [GET]
+  [4;36;1mTienda Columns (84.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.1ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 540ms (View: 38, DB: 86) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:36:09) [GET]
+  [4;35;1mTienda Columns (8.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 557ms (View: 37, DB: 10) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:36:40) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 457ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:53:10) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 568ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:53:29) [GET]
+  [4;36;1mTienda Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 1321ms (View: 37, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:57:18) [GET]
+  [4;35;1mTienda Columns (18.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 592ms (View: 40, DB: 101) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:59:02) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.6ms)
+Completed in 447ms (View: 39, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:59:19) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 452ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:59:49) [GET]
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.7ms)
+Completed in 477ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 16:59:56) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 432ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:00:24) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 494ms (View: 41, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:00:34) [GET]
+  [4;35;1mTienda Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.5ms)
+Completed in 488ms (View: 49, DB: 17) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:01:24) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 404ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:04:35) [GET]
+  [4;35;1mTienda Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (22.2ms)
+Completed in 577ms (View: 50, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:05:16) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 458ms (View: 46, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:05:23) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.1ms)
+Completed in 486ms (View: 40, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:06:44) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 455ms (View: 42, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:07:10) [GET]
+  [4;35;1mTienda Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 491ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:08:11) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.6ms)
+Completed in 574ms (View: 120, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:08:30) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.9ms)
+Completed in 487ms (View: 38, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:08:45) [GET]
+  [4;36;1mTienda Columns (7.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (11.1ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.1ms)
+Completed in 1898ms (View: 39, DB: 20) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:09:00) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 496ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:09:15) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 694ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:17:28) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 619ms (View: 136, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:23:20) [GET]
+  [4;36;1mTienda Columns (8.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 502ms (View: 47, DB: 10) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:23:49) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 600ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:24:00) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.7ms)
+Completed in 612ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:24:05) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 500ms (View: 42, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:24:13) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (64.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (94.1ms)
+Completed in 651ms (View: 120, DB: 67) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:27:31) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.2ms)
+Completed in 464ms (View: 42, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:29:07) [GET]
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 530ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 17:30:55) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 474ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]

@@ -6,25 +6,32 @@ body{ background: #f4f5f5; margin: 0px; font-family: arial;}
 	box-shadow: 3px 3px 3px #666;}
 .logo img{ border: 0;}
 
-.mapa{ position: fixed; top: 8em; border-bottom: 4px solid #183670; border-top: 1px solid #183670; width: 75%; height: 700px; float: left;
- 			z-index: -11;}
+.mapa{ position: fixed; top: 8em; border-bottom: 4px solid #183670; border-top: 1px solid #183670; width: 75%; height: 700px; float: left; z-index: -11;}
 
 .tiendas{ position: fixed; right: 0px; top: 8em; width: 25%;  
 	border-top: 3px solid #183670; 
 	border-left: 1px solid black; 
-	overflow:scroll; z-index: -1;}
+	overflow:scroll; z-index: -1;
+	height: 100%;
+}
 
-.info{ width: 90%; margin: 0 auto; border-bottom: 1px solid #003a76; line-height: 3em;}
+
+.info{ width: 90%; margin: 0 auto; padding-bottom: 2em; border-bottom: 1px solid #003a76; line-height: 3em;}
+.info p{ margin: 0 3em 0 2em; }
+.info h2{ font-weight: 100; background: url("/images/estrella.png") no-repeat; padding-left: 2em;}
+.info h2 a, a{ text-decoration: none; color: #003a76;}
+.info h2 a:visited, a:visited;{ color: #003a76;}
+
 
 .notices{ position: absolute; top: 2em; right: 400px;}
 
-.new_franquicia{ position: absolute; right: 100px; top: 2em;  color: white; padding: .5em 2em .5em .8em; 
+.new_franquicia{ position: absolute; left: 500px; top: 3em;  color: white; padding: .5em 2em .5em .8em; 
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px; 
 	border-radius: 10px;
 	background: #003a76 no-repeat 95% 60%  url("/images/flecha_abajo.png");}
 	
-.new_franquicia_form {  position: absolute; right: 100px; top: 4em;  color: white; padding: .5em 2em .5em .8em; 
+.new_franquicia_form {  position: absolute; left: 500px; top: 8em;  color: white; padding: .5em 2em .5em .8em; 
 	-moz-border-radius: 10px; 
 	-webkit-border-radius: 10px; 
 	border-radius: 10px;
@@ -32,11 +39,36 @@ body{ background: #f4f5f5; margin: 0px; font-family: arial;}
 	z-index: 11;}
 	
 	
+.ciudades{ 
+	position: absolute; left: 300px; top: 3em;  color: white; padding: .5em 2em .5em .8em; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	border-radius: 10px;
+	background: #003a76 no-repeat 95% 60%  url("/images/flecha_abajo.png");
+
+}
+
+.ciudad{ width: 250px; float: left;}
+
+.ciudades_form{ 
+		position: absolute; left: 300px; top: 8em;  color: white; padding: .5em 2em .5em .8em; 
+		-moz-border-radius: 10px; 
+		-webkit-border-radius: 10px; 
+		width: 40em;
+		border-radius: 10px;
+		background: #003a76;
+		z-index: 11;
+}			
+								
+.ciudades_form a{ font-size: 1.1em; line-height: 2em; color: white;}
+.ciudades_form .ciudad a:hover{ color: yellow;}
+.ciudades_form span{ margin-right: 2em; width: 10em;}
+
+
+.numero_tiendas{ position: absolute; top: 2em; right: 10em;}
+
 
 h1{ font-size: 24px; font-weight: 100;}
-h2{ background: url("/images/estrella.png") no-repeat; padding-left: 2em;}
-
-h2 a{font-size: 100;}
 
 .footer{ text-align: center; position: fixed; bottom: 0px; background: #003a76; width: 100%; height: 1em; padding: .7em;}
 .footer a{ color: white; font-size: 1.1em;}

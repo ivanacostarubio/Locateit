@@ -13,4 +13,13 @@ class ApplicationController < ActionController::Base
   def cuantos_churromanias
     @numero_churromanias = Tienda.count
   end
+  
+  def procesar_ciudades
+    @tiendas = Tienda.all
+    @ciudades = Array.new
+    @tiendas.each do |tienda|
+      @ciudades << tienda.ciudad.upcase
+    end
+    @ciudades.sort!.uniq!
+  end
 end
