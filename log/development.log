@@ -11550,3 +11550,916 @@ Rendering template within layouts/tiendas
 Rendering tiendas/index
 Rendered tiendas/_new (10.1ms)
 Completed in 536ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 21:04:27) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 776ms (View: 61, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index to ciudadbolivar (for 127.0.0.1 at 2009-12-05 21:04:35) [GET]
+  [4;36;1mTienda Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Completed in 450ms (View: 1, DB: 4) | 406 Not Acceptable [http://127.0.0.1/tiendas.ciudadbolivar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index to ciudadbolivar (for 127.0.0.1 at 2009-12-05 21:04:38) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Completed in 360ms (View: 1, DB: 2) | 406 Not Acceptable [http://127.0.0.1/tiendas.ciudadbolivar]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 21:04:40) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.6ms)
+Completed in 415ms (View: 56, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 21:04:51) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (tienda_url failed to generate from {:controller=>"tiendas", :action=>"show", :id=>""}, expected: {:controller=>"tiendas", :action=>"show"}, diff: {:id=>""}) on line #24 of app/views/layouts/tiendas.html.erb:
+21:     
+22:     <div class="ciudades_form" style="display: none;">
+23:       <% @ciudades.each do |ciudad| %>
+24:         <div class="ciudad"><span><%= link_to ciudad, tienda_path(ciudad) %></span></div>
+25:       <% end %>
+26:     </div>
+27:     
+
+    (eval):16:in `tienda_path'
+    app/views/layouts/tiendas.html.erb:24
+    app/views/layouts/tiendas.html.erb:23:in `each'
+    app/views/layouts/tiendas.html.erb:23
+    app/controllers/tiendas_controller.rb:14:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.3ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 21:05:05) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 510ms (View: 62, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 21:06:21) [GET]
+  [4;35;1mTienda Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+
+NoMethodError (undefined method `name' for []:Array):
+  app/controllers/application_controller.rb:21:in `procesar_ciudades'
+  app/controllers/application_controller.rb:20:in `each'
+  app/controllers/application_controller.rb:20:in `procesar_ciudades'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 21:06:57) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 420ms (View: 62, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index to ciudad bolivar (for 127.0.0.1 at 2009-12-05 21:09:56) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Completed in 541ms (View: 1, DB: 2) | 406 Not Acceptable [http://127.0.0.1/tiendas.ciudad%20bolivar]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:44:18) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 639ms (View: 62, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:45:28) [GET]
+  [4;36;1mTienda Columns (38.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (65.9ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 808ms (View: 136, DB: 106) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:45:32) [GET]
+  [4;35;1mTienda Columns (10.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (1.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.8ms)
+Completed in 589ms (View: 57, DB: 14) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:45:50) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (12.2ms)
+Completed in 839ms (View: 173, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:45:55) [GET]
+  [4;36;1mTienda Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 717ms (View: 137, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:46:11) [GET]
+  [4;35;1mTienda Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (34.0ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` WHERE (((tiendas.lat>25.6387901471464 AND tiendas.lat<25.9279298528536 AND tiendas.lng>-80.3506526814271 AND tiendas.lng<-80.0295453185728)) AND (
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ <= 10)) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 675ms (View: 36, DB: 40) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:46:24) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` WHERE (((tiendas.lat>24.3376614714641 AND tiendas.lat<27.2290585285359 AND tiendas.lng>-81.7955571182084 AND tiendas.lng<-78.5846408817916)) AND (
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ <= 100)) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 807ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:46:40) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 659ms (View: 52, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:48:28) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: Irving, TX. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>Irving, TX</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Irving, TX, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>TX</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Dallas</SubAdministrativeAreaName><Locality><LocalityName>Irving</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="32.8890065" south="32.7389656" east="-96.8208351" west="-97.0769539" />
+    </ExtendedData>
+    <Point><coordinates>-96.9488945,32.8140177,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (18.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.572712649672697)*COS(-1.69207741519362)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.572712649672697)*SIN(-1.69207741519362)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.572712649672697)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance DESC LIMIT 1[0m
+
+NoMethodError (undefined method `each' for #<Tienda:0x1035da260>):
+  app/controllers/tiendas_controller.rb:112:in `dibujar_tiendas'
+  app/controllers/tiendas_controller.rb:12:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.4ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:48:37) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mSQL (68.0ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `find_farthests' for #<Class:0x1033657f0>):
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:48:51) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+
+NameError (undefined local variable or method `distance' for #<TiendasController:0x10359ee18>):
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:49:44) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne Bay, Miami. Fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne Bay, Miami. Fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 701ms (View: 54, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:50:14) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'distance' in 'order clause': SELECT * FROM `tiendas` ORDER BY distance[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'distance' in 'order clause': SELECT * FROM `tiendas`  ORDER BY distance):
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:51:14) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'distance' in 'order clause': SELECT * FROM `tiendas` ORDER BY distance[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'distance' in 'order clause': SELECT * FROM `tiendas`  ORDER BY distance):
+  app/controllers/tiendas_controller.rb:9:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (154.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:51:58) [GET]
+  [4;35;1mTienda Columns (14.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (13.6ms)
+Completed in 898ms (View: 107, DB: 16) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:51:59) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 772ms (View: 142, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:00) [GET]
+  [4;35;1mTienda Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 689ms (View: 55, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:00) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.9ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 767ms (View: 139, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:01) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 688ms (View: 54, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:02) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (1.3ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 699ms (View: 53, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:03) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 687ms (View: 53, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:03) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.1ms)
+Completed in 698ms (View: 53, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:04) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 693ms (View: 53, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:26) [GET]
+  [4;36;1mTienda Columns (16.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 817ms (View: 63, DB: 19) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 22:52:51) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.9ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 677ms (View: 63, DB: 3) | 200 OK [http://127.0.0.1/]

@@ -15,13 +15,15 @@
     <%= link_to image_tag('/images/logo.png'), '/' %>
     <%= image_tag '/images/locations.png' %>
     
+    <%= session[:geo_location] %>
+    
     <div class="ciudades">
       Todas las Ciudades
     </div>
     
     <div class="ciudades_form" style="display: none;">
       <% @ciudades.each do |ciudad| %>
-        <div class="ciudad"><span><%= link_to ciudad, '/' %></span></div>
+        <div class="ciudad"><span><%= link_to ciudad, tiendas_path(ciudad) %></span></div>
       <% end %>
     </div>
     

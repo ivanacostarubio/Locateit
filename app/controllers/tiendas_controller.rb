@@ -2,10 +2,11 @@ class TiendasController < ApplicationController
   before_filter :cuantos_churromanias, :procesar_ciudades
   geocode_ip_address
   
-  # GET /tiendas
+  
+    # GET /tiendas
   # GET /tiendas.xml
   def index
-    @tiendas = Tienda.all  
+    @tiendas = Tienda.find(:all, :origin => "900 biscayne bay miami, fl", :order=>'distance')  
     @tienda = Tienda.new
     
     dibujar_tiendas(@tiendas)
