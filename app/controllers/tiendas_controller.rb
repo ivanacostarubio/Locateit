@@ -1,12 +1,12 @@
 class TiendasController < ApplicationController
-  before_filter :cuantos_churromanias, :procesar_ciudades
+  before_filter :procesar_ciudades, :cuantos_churromanias
   geocode_ip_address
   
   
     # GET /tiendas
   # GET /tiendas.xml
   def index
-    @tiendas = Tienda.find(:all, :origin => "900 biscayne bay miami, fl", :order=>'distance')  
+    @tiendas = Tienda.find(:all)  
     @tienda = Tienda.new
     
     dibujar_tiendas(@tiendas)
@@ -36,7 +36,7 @@ class TiendasController < ApplicationController
     @tienda = Tienda.new
 
     respond_to do |format|
-      format.html 
+      format.html { render :layout => false }
       format.xml  { render :xml => @tienda }
     end
   end
@@ -67,7 +67,7 @@ class TiendasController < ApplicationController
         format.xml  { render :xml => @tienda, :status => :created, :location => @tienda }
       else
         flash[:error] = "Upsss... Google no pudo codificar la direccion. Prueba haciendo la direccion mas general."
-        format.html { redirect_to :back }
+        format.html { redirect_to '/' }
         format.xml  { render :xml => @tienda.errors, :status => :unprocessable_entity }
       end
     end

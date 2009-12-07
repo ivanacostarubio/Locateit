@@ -12463,3 +12463,1796 @@ Rendering template within layouts/tiendas
 Rendering tiendas/index
 Rendered tiendas/_new (9.9ms)
 Completed in 677ms (View: 63, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 23:01:12) [GET]
+  [4;35;1mTienda Columns (4.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (14.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.city) on line #18 of app/views/layouts/tiendas.html.erb:
+15:     <%= link_to image_tag('/images/logo.png'), '/' %>
+16:     <%= image_tag '/images/locations.png' %>
+17:     
+18:     <%= session[:geo_location].city %>
+19:     
+20:     <div class="ciudades">
+21:       Todas las Ciudades
+
+    app/views/layouts/tiendas.html.erb:18
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.7ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 23:01:15) [GET]
+  [4;36;1mTienda Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.city) on line #18 of app/views/layouts/tiendas.html.erb:
+15:     <%= link_to image_tag('/images/logo.png'), '/' %>
+16:     <%= image_tag '/images/locations.png' %>
+17:     
+18:     <%= session[:geo_location].city %>
+19:     
+20:     <div class="ciudades">
+21:       Todas las Ciudades
+
+    app/views/layouts/tiendas.html.erb:18
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 23:01:28) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+ERROR: compiling _run_erb_app47views47layouts47tiendas46html46erb RAISED compile error
+/Users/ivan/sinatra/churromania/app/views/layouts/tiendas.html.erb:65: syntax error, unexpected kENSURE, expecting ')'
+/Users/ivan/sinatra/churromania/app/views/layouts/tiendas.html.erb:67: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47layouts47tiendas46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n  <title>Tiendas Churromania</title>\n  "
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'scaffold', 'styles' ).to_s); @output_buffer.concat "\n  <script src=\"http://code.jquery.com/jquery-latest.js\"></script>\n  "
+
+; @output_buffer.concat(( javascript_include_tag 'application' ).to_s); @output_buffer.concat "\n</head>\n<body>\n\n  <div class=\"logo\">\n    "
+
+
+
+
+; @output_buffer.concat(( link_to image_tag('/images/logo.png'), '/' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( image_tag '/images/locations.png' ).to_s); @output_buffer.concat "\n    \n    "
+
+; @output_buffer.concat(( # session[:geo_location].city ).to_s); @output_buffer.concat "\n    \n    <div class=\"ciudades\">\n      Todas las Ciudades\n    </div>\n    \n    <div class=\"ciudades_form\" style=\"display: none;\">\n      "
+
+
+
+
+
+
+;  @ciudades.each do |ciudad| ; @output_buffer.concat "\n        <div class=\"ciudad\"><span>"
+; @output_buffer.concat(( link_to ciudad, tiendas_path(ciudad) ).to_s); @output_buffer.concat "</span></div>\n      "
+;  end ; @output_buffer.concat "\n    </div>\n    \n    \n    <div class=\"new_franquicia\">\n      Sugerir Franquicia\n    </div>    \n    \n    \n    <div class=\"new_franquicia_form\" style=\"display: none;\">\n      "
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( render :partial => "/tiendas/new" ).to_s); @output_buffer.concat "\n    </div>\n    \n    <div class=\"numero_tiendas\">\n      <h1>Hay "
+
+
+
+; @output_buffer.concat(( @numero_churromanias ).to_s); @output_buffer.concat " churromanias </h1>\n    </div>\n    \n    \n    \n    <div class=\"notices\">\n      <p style=\"color: blue;\">"
+
+
+
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "<p>\n      <p style=\"color: red;\">"
+; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "</p>\n    </div>\n  </div>\n\n\n  <div class=\"mapa\">\n    "
+
+
+
+
+
+; @output_buffer.concat(( @map.div ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( @map.to_html ).to_s); @output_buffer.concat "\n  </div>\n  \n  <div class=\"tiendas\">\n      "
+
+
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n  </div>\n  \n</body>\n</html>\n"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ivan/sinatra/churromania/app/views/layouts/tiendas.html.erb:67:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/ivan/sinatra/churromania/app/controllers/tiendas_controller.rb:15:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/ivan/sinatra/churromania/app/views/layouts/tiendas.html.erb:65: syntax error, unexpected kENSURE, expecting ')'
+/Users/ivan/sinatra/churromania/app/views/layouts/tiendas.html.erb:67: syntax error, unexpected kEND, expecting ')') on line #65 of app/views/layouts/tiendas.html.erb:
+62: </body>
+63: </html>
+
+    app/views/layouts/tiendas.html.erb:67:in `compile!'
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 23:01:37) [GET]
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (11.7ms)
+Completed in 751ms (View: 69, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-05 23:01:44) [GET]
+  [4;35;1mTienda Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Google geocoding. Address: 900 biscayne bay miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Load (0.8ms)[0m   [0;1mSELECT *, 
+ (ACOS(least(1,COS(0.450004524227005)*COS(-1.39958125505021)*COS(RADIANS(tiendas.lat))*COS(RADIANS(tiendas.lng))+
+ COS(0.450004524227005)*SIN(-1.39958125505021)*COS(RADIANS(tiendas.lat))*SIN(RADIANS(tiendas.lng))+
+ SIN(0.450004524227005)*SIN(RADIANS(tiendas.lat))))*3963.19)
+ AS distance FROM `tiendas` ORDER BY distance[0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 648ms (View: 62, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (23.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (75.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mdescribe `tiendas`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (15.7ms)[0m   [0mCREATE TABLE "tiendas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "direccion" varchar(255), "lat" float, "lng" float, "created_at" datetime, "updated_at" datetime, "ciudad" varchar(255), "estado" varchar(255), "codigo_postal" varchar(255), "pais" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (54.6ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (62.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091204210932')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091119205342')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (26.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `test_churrotiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `test_churrotiendas` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (139.4ms)[0m   [0;1mCREATE TABLE `tiendas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nombre` varchar(255), `direccion` varchar(255), `lat` float, `lng` float, `created_at` datetime, `updated_at` datetime, `ciudad` varchar(255), `estado` varchar(255), `codigo_postal` varchar(255), `pais` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (245.2ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (372.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20091204210932')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20091119205342')[0m
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:28:25) [GET]
+  [4;35;1mTienda Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 21ms (DB: 3) | 302 Found [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:28:25) [GET]
+  [4;36;1mTienda Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 17ms (DB: 6) | 302 Found [http://127.0.0.1/]
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:25) [GET]
+  [4;35;1mTienda Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 40ms (DB: 14) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 18ms (DB: 6) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (58.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 71ms (DB: 59) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 12ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 16ms (DB: 5) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 108ms (DB: 4) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (6.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 18ms (DB: 8) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (18.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 32ms (DB: 19) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;36;1mTienda Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 4) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:26) [GET]
+  [4;35;1mTienda Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:27) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:27) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:27) [GET]
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:27) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 12ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:27) [GET]
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 16ms (DB: 4) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (25.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 38ms (DB: 26) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 5) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:29) [GET]
+  [4;36;1mTienda Columns (7.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 19ms (DB: 9) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;35;1mTienda Columns (135.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (91.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 238ms (DB: 227) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;35;1mTienda Columns (25.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 40ms (DB: 26) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 104ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:30) [GET]
+  [4;35;1mTienda Columns (20.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 37ms (DB: 21) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:28:42) [GET]
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 17ms (DB: 3) | 302 Found [http://127.0.0.1/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:42) [GET]
+  [4;35;1mTienda Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 17ms (DB: 4) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:42) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:42) [GET]
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:42) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:42) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (20.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 31ms (DB: 21) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (20.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 35ms (DB: 21) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (17.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 28ms (DB: 18) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 15ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 16ms (DB: 5) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 13ms (DB: 3) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:28:43) [GET]
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 14ms (DB: 2) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:42:39) [GET]
+  [4;35;1mTienda Columns (52.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 66ms (DB: 53) | 302 Found [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:42:39) [GET]
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+Rendering tiendas/new
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/tiendas_controller.rb:40:in `html'
+  app/controllers/tiendas_controller.rb:40:in `new'
+  app/controllers/tiendas_controller.rb:39:in `new'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.5ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:43:02) [GET]
+  [4;36;1mTienda Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 21ms (DB: 9) | 302 Found [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:43:02) [GET]
+  [4;35;1mTienda Columns (7.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/tiendas_controller.rb:40:in `html'
+  app/controllers/tiendas_controller.rb:40:in `new'
+  app/controllers/tiendas_controller.rb:39:in `new'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:51:43) [GET]
+  [4;35;1mTienda Columns (106.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (45.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 254ms (DB: 153) | 302 Found [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:44) [GET]
+  [4;36;1mTienda Columns (39.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (74.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 125ms (DB: 114) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:44) [GET]
+  [4;35;1mTienda Columns (35.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 64ms (DB: 41) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:44) [GET]
+  [4;36;1mTienda Columns (124.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (64.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 201ms (DB: 189) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:44) [GET]
+  [4;35;1mTienda Columns (55.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 72ms (DB: 60) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:44) [GET]
+  [4;36;1mTienda Columns (703.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (76.1ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 790ms (DB: 779) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:45) [GET]
+  [4;35;1mTienda Columns (110.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 139ms (DB: 128) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:46) [GET]
+  [4;36;1mTienda Columns (119.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (34.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 165ms (DB: 155) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:46) [GET]
+  [4;35;1mTienda Columns (84.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (65.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 162ms (DB: 150) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:46) [GET]
+  [4;36;1mTienda Columns (53.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (53.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 124ms (DB: 107) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:46) [GET]
+  [4;35;1mTienda Columns (9.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (37.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 86ms (DB: 47) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:47) [GET]
+  [4;36;1mTienda Columns (173.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (151.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 336ms (DB: 324) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:47) [GET]
+  [4;35;1mTienda Columns (88.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (15.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 114ms (DB: 104) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:47) [GET]
+  [4;36;1mTienda Columns (43.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (12.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 67ms (DB: 56) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:47) [GET]
+  [4;35;1mTienda Columns (994.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (139.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 1146ms (DB: 1134) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:49) [GET]
+  [4;36;1mTienda Columns (51.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (101.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 175ms (DB: 152) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:49) [GET]
+  [4;35;1mTienda Columns (76.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (115.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 203ms (DB: 192) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:49) [GET]
+  [4;36;1mTienda Columns (138.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (14.9ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 166ms (DB: 154) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:49) [GET]
+  [4;35;1mTienda Columns (162.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (87.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 263ms (DB: 250) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:50) [GET]
+  [4;36;1mTienda Columns (110.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (20.7ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 154ms (DB: 131) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:51:50) [GET]
+  [4;35;1mTienda Columns (102.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (8.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 126ms (DB: 111) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:52:21) [GET]
+  [4;36;1mTienda Columns (80.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 105ms (DB: 94) | 302 Found [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:21) [GET]
+  [4;35;1mTienda Columns (28.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (53.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 117ms (DB: 82) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (12.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:21) [GET]
+  [4;36;1mTienda Columns (46.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 67ms (DB: 68) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:21) [GET]
+  [4;35;1mTienda Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (160.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 190ms (DB: 165) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:22) [GET]
+  [4;36;1mTienda Columns (49.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (136.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 195ms (DB: 185) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:22) [GET]
+  [4;35;1mTienda Columns (827.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (201.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 1040ms (DB: 1030) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:23) [GET]
+  [4;36;1mTienda Columns (126.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (48.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 185ms (DB: 175) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:23) [GET]
+  [4;35;1mTienda Columns (49.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (10.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 72ms (DB: 60) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:23) [GET]
+  [4;36;1mTienda Columns (135.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (40.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 186ms (DB: 176) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:24) [GET]
+  [4;35;1mTienda Columns (194.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (55.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 261ms (DB: 250) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:24) [GET]
+  [4;36;1mTienda Columns (11.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (23.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 45ms (DB: 35) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:24) [GET]
+  [4;35;1mTienda Columns (27.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (59.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 99ms (DB: 87) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:24) [GET]
+  [4;36;1mTienda Columns (58.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (69.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 237ms (DB: 128) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:24) [GET]
+  [4;35;1mTienda Columns (37.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (66.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 118ms (DB: 104) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;36;1mTienda Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (44.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 81ms (DB: 65) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;35;1mTienda Columns (51.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (40.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 106ms (DB: 92) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;36;1mTienda Columns (18.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (14.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 44ms (DB: 33) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;35;1mTienda Columns (70.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (55.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 141ms (DB: 125) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;36;1mTienda Columns (14.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (33.1ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 60ms (DB: 47) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;35;1mTienda Columns (177.2ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 210ms (DB: 197) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:25) [GET]
+  [4;36;1mTienda Columns (24.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (67.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+Redirected to http://127.0.0.1:3000/tiendas/new
+Filter chain halted as [:cuantos_churromanias] rendered_or_redirected.
+Completed in 113ms (DB: 92) | 302 Found [http://127.0.0.1/tiendas/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTienda Columns (35.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (107.5ms)[0m   [0;1mBEGIN[0m
+Google geocoding. Address: 900 biscayne bay. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>900 biscayne bay</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>900 Biscayne Bay, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="9" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>900 Biscayne Bay</AddressLine></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7934067" south="25.7733124" east="-80.1740916" west="-80.2061064" />
+    </ExtendedData>
+    <Point><coordinates>-80.1900990,25.7833600,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;35;1mTienda Create (0.7ms)[0m   [0mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `ciudad`, `pais`, `estado`, `direccion`, `lat`, `codigo_postal`) VALUES('2009-12-07 15:52:27', '900 Store', '2009-12-07 15:52:27', -80.190099, 'Miami', 'USA', 'Florida', '900 biscayne bay', 25.78336, '33132')[0m
+  [4;36;1mSQL (56.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: 50 biscayne bay. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>50 biscayne bay</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>50 Biscayne Bay, Winnipeg, MB, Canada</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>CA</CountryNameCode><CountryName>Canada</CountryName><AdministrativeArea><AdministrativeAreaName>MB</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Division No. 11</SubAdministrativeAreaName><Locality><LocalityName>Winnipeg</LocalityName><Thoroughfare><ThoroughfareName>50 Biscayne Bay</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>R3T</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="49.8410642" south="49.8347690" east="-97.1568310" west="-97.1631262" />
+    </ExtendedData>
+    <Point><coordinates>-97.1599739,49.8379111,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.5ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `ciudad`, `pais`, `estado`, `direccion`, `lat`, `codigo_postal`) VALUES('2009-12-07 15:52:28', '50 Store', '2009-12-07 15:52:28', -97.1599739, 'Miami', 'USA', 'Florida', '50 biscayne bay', 49.8379111, '33132')[0m
+  [4;35;1mSQL (54.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 10:52:34) [GET]
+  [4;35;1mTienda Columns (96.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (205.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/tiendas_controller.rb:39:in `html'
+  app/controllers/tiendas_controller.rb:39:in `new'
+  app/controllers/tiendas_controller.rb:38:in `new'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:53:35) [GET]
+  [4;36;1mTienda Columns (77.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (53.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #24 of app/views/layouts/tiendas.html.erb:
+21:     </div>
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, tiendas_path(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 10:53:49) [GET]
+  [4;36;1mTienda Load (8.2ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (20.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (13.7ms)
+Completed in 530ms (View: 29, DB: 35) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (142.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (95.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (119.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (292.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (284.1ms)[0m   [0mdescribe `tiendas`[0m
+  [4;36;1mSQL (117.7ms)[0m   [0;1mSHOW KEYS FROM `tiendas`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1055.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `test_churrotiendas`[0m
+  [4;35;1mSQL (19.2ms)[0m   [0mCREATE DATABASE `test_churrotiendas` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (997.5ms)[0m   [0;1mCREATE TABLE `tiendas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nombre` varchar(255), `direccion` varchar(255), `lat` float, `lng` float, `created_at` datetime, `updated_at` datetime, `ciudad` varchar(255), `estado` varchar(255), `codigo_postal` varchar(255), `pais` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1057.8ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1764.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (201.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20091204210932')[0m
+  [4;35;1mSQL (243.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20091119205342')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 11:06:48) [GET]
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.7ms)
+Completed in 441ms (View: 30, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (5.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 11:07:20) [GET]
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (25.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 531ms (View: 18, DB: 31) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 11:26:05) [GET]
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 35119ms (View: 18, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 11:54:14) [GET]
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Rendering tiendas/new
+Completed in 372ms (View: 1, DB: 2) | 200 OK [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 11:54:31) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/new
+Rendered tiendas/_new (12.2ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.div) on line #53 of app/views/layouts/tiendas.html.erb:
+50: 
+51: 
+52:   <div class="mapa">
+53:     <%= @map.div %>
+54:     <%= @map.to_html %>
+55:   </div>
+56:   
+
+    app/views/layouts/tiendas.html.erb:53
+    app/controllers/tiendas_controller.rb:39:in `new'
+    app/controllers/tiendas_controller.rb:38:in `new'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 11:55:39) [GET]
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Rendering template within layouts/no_map
+Rendering tiendas/new
+Rendered tiendas/_new (11.0ms)
+Completed in 529ms (View: 117, DB: 3) | 200 OK [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 11:56:16) [GET]
+  [4;36;1mTienda Load (0.7ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Rendering tiendas/new
+Rendered tiendas/_new (11.6ms)
+Completed in 427ms (View: 21, DB: 4) | 200 OK [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#new (for 127.0.0.1 at 2009-12-07 11:56:59) [GET]
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+Rendering tiendas/new
+Rendered tiendas/_new (10.4ms)
+Completed in 425ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/tiendas/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#create (for 127.0.0.1 at 2009-12-07 12:05:00) [POST]
+  Parameters: {"commit"=>"sugerir franquicia", "authenticity_token"=>"llFV1a8FapL+IojbC96OIxOrCaKtIZtJxoUIoK72WsM=", "tienda"=>{"nombre"=>"300 biscayne", "ciudad"=>"miami", "pais"=>"usa", "estado"=>"fl", "direccion"=>"30 biscayne blvd miami, fl", "codigo_postal"=>"33132"}}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+Google geocoding. Address: 30 biscayne blvd miami, fl. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>30 biscayne blvd miami, fl</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>30 Biscayne Blvd, Miami, FL 33132, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Miami-Dade</SubAdministrativeAreaName><Locality><LocalityName>Miami</LocalityName><Thoroughfare><ThoroughfareName>30 Biscayne Blvd</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>33132</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="25.7772240" south="25.7709287" east="-80.1845013" west="-80.1907966" />
+    </ExtendedData>
+    <Point><coordinates>-80.1876605,25.7740746,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mTienda Create (0.3ms)[0m   [0;1mINSERT INTO `tiendas` (`created_at`, `nombre`, `updated_at`, `lng`, `ciudad`, `pais`, `estado`, `direccion`, `lat`, `codigo_postal`) VALUES('2009-12-07 17:05:01', '300 biscayne', '2009-12-07 17:05:01', -80.1876605, 'miami', 'usa', 'fl', '30 biscayne blvd miami, fl', 25.7740746, '33132')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/3
+Completed in 777ms (DB: 4) | 302 Found [http://127.0.0.1/tiendas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-07 12:05:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (11.4ms)
+Completed in 427ms (View: 26, DB: 3) | 200 OK [http://127.0.0.1/tiendas/3]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-07 12:46:51) [GET]
+  Parameters: {"admin"=>"yes", "id"=>"3"}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (133.4ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (14.3ms)
+Completed in 626ms (View: 42, DB: 135) | 200 OK [http://127.0.0.1/tiendas/3?admin=yes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#edit (for 127.0.0.1 at 2009-12-07 12:46:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (28.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/edit
+Rendered tiendas/_new (12.2ms)
+Completed in 485ms (View: 37, DB: 30) | 200 OK [http://127.0.0.1/tiendas/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#update (for 127.0.0.1 at 2009-12-07 12:47:04) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"llFV1a8FapL+IojbC96OIxOrCaKtIZtJxoUIoK72WsM=", "id"=>"3", "tienda"=>{"nombre"=>"Edited", "direccion"=>"sambil caracas venezuela"}}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (39.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (85.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTienda Update (0.3ms)[0m   [0mUPDATE `tiendas` SET `updated_at` = '2009-12-07 17:47:05', `nombre` = 'Edited', `direccion` = 'sambil caracas venezuela' WHERE `id` = 3[0m
+  [4;36;1mSQL (116.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/tiendas/3
+Completed in 749ms (DB: 243) | 302 Found [http://127.0.0.1/tiendas/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#show (for 127.0.0.1 at 2009-12-07 12:47:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (14.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (81.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`id` = 3) [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/show
+Rendered tiendas/_new (12.4ms)
+Completed in 533ms (View: 20, DB: 97) | 200 OK [http://127.0.0.1/tiendas/3]

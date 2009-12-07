@@ -31,6 +31,9 @@ body{ background: #f4f5f5; margin: 0px; font-family: arial;}
 	-webkit-border-radius: 10px; 
 	border-radius: 10px;
 	background: #003a76 no-repeat 95% 60%  url("/images/flecha_abajo.png");}
+
+.new_franquicia a{ color: white;}
+
 	
 .new_franquicia_form {  position: absolute; left: 500px; top: 8em;  color: white; padding: .5em 2em .5em .8em; 
 	-moz-border-radius: 10px; 

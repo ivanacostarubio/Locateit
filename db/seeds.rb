@@ -5,3 +5,8 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+tiendas = Tienda.create([
+  { :nombre => "900 Store", :direccion => "900 biscayne bay", :ciudad => "Miami", :estado => "Florida", :pais => "USA", :codigo_postal => "33132"},
+  { :nombre => "50 Store", :direccion => "50 biscayne bay", :ciudad => "Miami", :estado => "Florida", :pais => "USA", :codigo_postal => "33132"}
+])
