@@ -16602,3 +16602,41 @@ Rendering template within layouts/application
 Rendering tiendas/index
 Rendered tiendas/_new (10.1ms)
 Completed in 452ms (View: 52, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-11 11:11:06) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 3423ms (View: 129, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-11 11:13:25) [GET]
+  [4;35;1mTienda Load (2.1ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering tiendas/index
+Rendered tiendas/_new (10.6ms)
+Completed in 480ms (View: 58, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 11:13:29) [GET]
+  Parameters: {"id"=>"KISIIMMEE"}
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (399.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'KISIIMMEE') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered layouts/_admin_bar (1.4ms)
+Rendered tiendas/_new (15.4ms)
+Completed in 586ms (View: 54, DB: 402) | 200 OK [http://127.0.0.1/buscar/KISIIMMEE]

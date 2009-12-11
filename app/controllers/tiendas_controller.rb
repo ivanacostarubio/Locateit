@@ -2,8 +2,6 @@ class TiendasController < ApplicationController
   before_filter :procesar_ciudades, :cuantos_churromanias
   geocode_ip_address
     
-  # GET /tiendas
-  # GET /tiendas.xml
   def index
     @tiendas = Tienda.find(:all)  
     @tienda = Tienda.new  
@@ -17,8 +15,6 @@ class TiendasController < ApplicationController
     end
   end
 
-  # GET /tiendas/1
-  # GET /tiendas/1.xml
   def show
     @tienda = Tienda.find(params[:id])
     dibujar_tienda(@tienda)
@@ -29,8 +25,6 @@ class TiendasController < ApplicationController
     end
   end
 
-  # GET /tiendas/new
-  # GET /tiendas/new.xml
   def new
     @tienda = Tienda.new
 
@@ -40,7 +34,6 @@ class TiendasController < ApplicationController
     end
   end
 
-  # GET /tiendas/1/edit
   def edit
     @tienda = Tienda.find(params[:id])
     
@@ -54,8 +47,6 @@ class TiendasController < ApplicationController
     
   end
 
-  # POST /tiendas
-  # POST /tiendas.xml
   def create
     @tienda = Tienda.new(params[:tienda])
 
@@ -89,8 +80,6 @@ class TiendasController < ApplicationController
     end
   end
 
-  # DELETE /tiendas/1
-  # DELETE /tiendas/1.xml
   def destroy
     @tienda = Tienda.find(params[:id])
     @tienda.destroy
