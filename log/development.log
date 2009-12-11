@@ -16640,3 +16640,4 @@ Rendering buscar/show
 Rendered layouts/_admin_bar (1.4ms)
 Rendered tiendas/_new (15.4ms)
 Completed in 586ms (View: 54, DB: 402) | 200 OK [http://127.0.0.1/buscar/KISIIMMEE]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Maracay') [0m
