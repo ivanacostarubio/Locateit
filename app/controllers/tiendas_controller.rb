@@ -1,12 +1,8 @@
 class TiendasController < ApplicationController
   before_filter :procesar_ciudades, :cuantos_churromanias
   geocode_ip_address
-  
-  def buscar
     
-  end
-  
-    # GET /tiendas
+  # GET /tiendas
   # GET /tiendas.xml
   def index
     @tiendas = Tienda.find(:all)  

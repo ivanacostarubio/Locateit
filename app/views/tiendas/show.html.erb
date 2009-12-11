@@ -9,8 +9,4 @@
   <%=h @tienda.direccion %>
 </div>
 
-
-<% if params[:admin] == "yes" %>
-  <%= link_to 'Editar', edit_tienda_path(@tienda) %> |
-  <%= link_to 'Borrar', @tienda ,:confirm  => '¿Seguro?', :method  => :delete %>
-<% end %>
+<%= render :partial => '/layouts/admin_bar' %>
