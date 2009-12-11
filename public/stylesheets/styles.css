@@ -87,6 +87,8 @@ input{ background: #ccd8e4; border: 0px; padding: .7em; font-size: 1em;}
 
 .submit:hover{ color: #edef07; background: none;}
 
+.back_to_home{ background-color: #edef07; width: 100%; font-size: 1.2em; padding: .4em; position: absolute; bottom: 100px;}
+
 /*td {font-size: 1.3em;}
 table a{ padding: 1em; background: #183670; color: white; text-decoration: none;}
 h1{ width: 100%; background: #a4cfe4; padding: .5em; color: white; margin: 0px;}
