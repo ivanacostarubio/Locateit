@@ -1,0 +1,13 @@
+<% @tiendas.each do |tienda| %>
+  <div class="info">
+    <h2><%= link_to tienda.nombre.upcase, tienda%></h2>
+    <p><%=h tienda.direccion.upcase %></p>
+  </div>
+<% end %>
+
+
+
+<% if params[:admin] == "yes" %>
+  <%= link_to 'Editar', edit_tienda_path(@tienda) %> |
+  <%= link_to 'Borrar', @tienda ,:confirm  => '¿Seguro?', :method  => :delete %>
+<% end %>

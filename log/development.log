@@ -14256,3 +14256,2227 @@ Rendering template within layouts/tiendas
 Rendering tiendas/show
 Rendered tiendas/_new (12.4ms)
 Completed in 533ms (View: 20, DB: 97) | 200 OK [http://127.0.0.1/tiendas/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:26:54) [GET]
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (6.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 574ms (View: 19, DB: 8) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:28:19) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 409ms (View: 53, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index to hialeah (for 127.0.0.1 at 2009-12-07 17:28:27) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Completed in 443ms (View: 1, DB: 3) | 406 Not Acceptable [http://127.0.0.1/tiendas.hialeah]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:29:39) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (tienda_url failed to generate from {:controller=>"tiendas", :action=>"show", :id=>""}, expected: {:controller=>"tiendas", :action=>"show"}, diff: {:id=>""}) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, tienda_path(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    (eval):16:in `tienda_path'
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (173.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:29:53) [GET]
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 420ms (View: 61, DB: 9) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:30:56) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar_path' for #<ActionView::Base:0x1031d9ee0>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar_path(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:31:27) [GET]
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar_path' for #<ActionView::Base:0x1030c1800>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar_path(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:31:28) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar_path' for #<ActionView::Base:0x1031ef010>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar_path(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:31:44) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x1030d9180>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:05) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x10378b690>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.9ms)
+Rendered rescues/_request_and_response (92.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:06) [GET]
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x103741838>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:07) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x10377f9f8>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:08) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x10345b150>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:08) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x103196230>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:09) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x1031f4e48>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:16) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar_path' for #<ActionView::Base:0x10321c9c0>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar_path(ciudad) %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:15:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:32:41) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 547ms (View: 50, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:32:52) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/ANACO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:33:50) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/ANACO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:33:51) [GET]
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 537ms (View: 49, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:33:52) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 451ms (View: 41, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:33:58) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/ANACO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:34:14) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/ANACO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:34:15) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.7ms)
+Completed in 449ms (View: 40, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/BOGOTA" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:35:34) [GET]
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_sym) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar_path(ciudad)  %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    (eval):20:in `buscar_path'
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:18:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:35:49) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+
+ActionView::TemplateError (undefined method `buscar' for #<ActionView::Base:0x1030f95c0>) on line #25 of app/views/layouts/tiendas.html.erb:
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, buscar(ciudad)  %></span></div>
+26:       <% end %>
+27:     </div>
+28:     
+
+    app/views/layouts/tiendas.html.erb:25
+    app/views/layouts/tiendas.html.erb:24:in `each'
+    app/views/layouts/tiendas.html.erb:24
+    app/controllers/tiendas_controller.rb:18:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:36:05) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (241.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (141.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.4ms)
+Completed in 935ms (View: 51, DB: 384) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:36:13) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.0ms)
+Completed in 461ms (View: 50, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:36:16) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/EL%20TIGRITO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:36:30) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/EL%20TIGRITO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-07 17:36:43) [GET]
+
+ActionController::RoutingError (No route matches "/buscar/EL%20TIGRITO" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-07 17:37:00) [GET]
+  Parameters: {"id"=>"EL TIGRITO"}
+
+NameError (uninitialized constant BuscarController):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-07 17:37:43) [GET]
+  Parameters: {"id"=>"EL TIGRITO"}
+
+NameError (uninitialized constant BuscarController):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:37:45) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (6.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.9ms)
+Completed in 455ms (View: 40, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:37:46) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.3ms)
+Completed in 546ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-07 17:37:52) [GET]
+  Parameters: {"id"=>"ANACO"}
+
+NameError (uninitialized constant BuscarController):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:38:09) [GET]
+  Parameters: {"id"=>"ANACO"}
+
+ActionView::MissingTemplate (Missing template buscar/show.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:38:26) [GET]
+  Parameters: {"id"=>"ANACO"}
+Rendering buscar/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/buscar/ANACO]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:38:35) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 538ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:38:37) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/tiendas
+Rendering tiendas/index
+Rendered tiendas/_new (10.2ms)
+Completed in 445ms (View: 42, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:38:40) [GET]
+  Parameters: {"id"=>"MIAMI"}
+Rendering buscar/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-07 17:38:52) [GET]
+  Parameters: {"id"=>"MIAMI"}
+
+SyntaxError (/Users/ivan/sinatra/churromania/app/controllers/buscar_controller.rb:2: syntax error, unexpected tASSOC, expecting kEND
+  :layout => :application
+            ^):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-07 17:38:59) [GET]
+  Parameters: {"id"=>"MIAMI"}
+
+SyntaxError (/Users/ivan/sinatra/churromania/app/controllers/buscar_controller.rb:2: syntax error, unexpected tASSOC, expecting kEND
+:layout => "application"
+          ^):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-12-07 17:39:07) [GET]
+  Parameters: {"id"=>"MIAMI"}
+
+SyntaxError (/Users/ivan/sinatra/churromania/app/controllers/buscar_controller.rb:2: syntax error, unexpected tASSOC, expecting kEND
+  layout => "application"
+           ^):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:39:35) [GET]
+  Parameters: {"id"=>"MIAMI"}
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #24 of app/views/layouts/application.html.erb:
+21:     </div>
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, '/buscar/' + ciudad  %></span></div>
+26:       <% end %>
+27:     </div>
+
+    app/views/layouts/application.html.erb:24
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:39:51) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #24 of app/views/layouts/application.html.erb:
+21:     </div>
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, '/buscar/' + ciudad  %></span></div>
+26:       <% end %>
+27:     </div>
+
+    app/views/layouts/application.html.erb:24
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (162.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:39:54) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #24 of app/views/layouts/application.html.erb:
+21:     </div>
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, '/buscar/' + ciudad  %></span></div>
+26:       <% end %>
+27:     </div>
+
+    app/views/layouts/application.html.erb:24
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:39:55) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #24 of app/views/layouts/application.html.erb:
+21:     </div>
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, '/buscar/' + ciudad  %></span></div>
+26:       <% end %>
+27:     </div>
+
+    app/views/layouts/application.html.erb:24
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:40:00) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #24 of app/views/layouts/application.html.erb:
+21:     </div>
+22:     
+23:     <div class="ciudades_form" style="display: none;">
+24:       <% @ciudades.each do |ciudad| %>
+25:         <div class="ciudad"><span><%= link_to ciudad, '/buscar/' + ciudad  %></span></div>
+26:       <% end %>
+27:     </div>
+
+    app/views/layouts/application.html.erb:24
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:40:15) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/tiendas/_new.html.erb:
+1: <% form_for(@tienda) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/tiendas/_new.html.erb:1
+    app/views/layouts/application.html.erb:36
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:40:30) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (10.6ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.div) on line #53 of app/views/layouts/application.html.erb:
+50: 
+51: 
+52:   <div class="mapa">
+53:     <%= @map.div %>
+54:     <%= @map.to_html %>
+55:   </div>
+56:   
+
+    app/views/layouts/application.html.erb:53
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (162.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:40:48) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+
+NoMethodError (undefined method `dibujar_tiendas' for #<BuscarController:0x10363fe58>):
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:41:19) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (11.3ms)
+Completed in 47ms (View: 23, DB: 2) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:41:25) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (10.9ms)
+Completed in 47ms (View: 22, DB: 3) | 200 OK [http://127.0.0.1/buscar/BARQUISIMETO]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:41:51) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/application_controller.rb:31:in `dibujar_tiendas'
+  app/controllers/buscar_controller.rb:8:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:42:16) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') LIMIT 1[0m
+
+NoMethodError (undefined method `each' for #<Tienda:0x103193aa8>):
+  app/controllers/application_controller.rb:31:in `dibujar_tiendas'
+  app/controllers/buscar_controller.rb:8:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:42:29) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:8:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:43:11) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') LIMIT 1[0m
+
+NoMethodError (undefined method `count' for #<Tienda:0x103319a58>):
+  app/controllers/buscar_controller.rb:8:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:43:20) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') LIMIT 1[0m
+
+NoMethodError (undefined method `size' for #<Tienda:0x103034298>):
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:43:36) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') LIMIT 1[0m
+
+NoMethodError (undefined method `size' for #<Tienda:0x1034ec1c8>):
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'CARACAS') LIMIT 1[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:47:27) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:47:30) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:47:32) [GET]
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering tiendas/index
+Rendered tiendas/_new (10.5ms)
+Completed in 493ms (View: 42, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:47:36) [GET]
+  Parameters: {"id"=>"CIUDAD BOLIVAR"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'CIUDAD BOLIVAR') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:47:46) [GET]
+  Parameters: {"id"=>"CHACAO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'CHACAO') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-07 17:48:00) [GET]
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 460ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-07 17:48:03) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'chacao') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-11 10:18:20) [GET]
+  [4;35;1mTienda Load (16.7ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering tiendas/index
+Rendered tiendas/_new (30.9ms)
+Completed in 683ms (View: 169, DB: 19) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:18:37) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'chacao') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:00) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'chacao') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.7ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.div) on line #53 of app/views/layouts/application.html.erb:
+50: 
+51: 
+52:   <div class="mapa">
+53:     <%= @map.div %>
+54:     <%= @map.to_html %>
+55:   </div>
+56:   
+
+    app/views/layouts/application.html.erb:53
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:05) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'chacao') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:10) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Miami') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:11) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Miami') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (158.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:12) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.6ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Miami') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:18) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Miami') LIMIT 1[0m
+
+NoMethodError (undefined method `each' for #<Tienda:0x1031cb8b8>):
+  app/controllers/application_controller.rb:31:in `dibujar_tiendas'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (153.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:19:21) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Miami') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:25:32) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (16.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'Miami') LIMIT 1[0m
+
+RuntimeError (Must set lat, lng, and map for GoogleMapMarker.):
+  app/controllers/application_controller.rb:40:in `new'
+  app/controllers/application_controller.rb:40:in `dibujar_tienda'
+  app/controllers/buscar_controller.rb:9:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:28:25) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.7ms)
+Completed in 149ms (View: 25, DB: 3) | 200 OK [http://127.0.0.1/buscar/ANACO]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:29:13) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'ANACO') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.4ms)
+Completed in 47ms (View: 22, DB: 3) | 200 OK [http://127.0.0.1/buscar/ANACO]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:30:08) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'ANACO') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.2ms)
+Completed in 47ms (View: 22, DB: 3) | 200 OK [http://127.0.0.1/buscar/ANACO]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:30:42) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'ANACO') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.7ms)
+Completed in 59ms (View: 34, DB: 3) | 200 OK [http://127.0.0.1/buscar/ANACO]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:31:20) [GET]
+  Parameters: {"id"=>"ANACO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'ANACO') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (13.4ms)
+Completed in 56ms (View: 32, DB: 3) | 200 OK [http://127.0.0.1/buscar/ANACO]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:31:32) [GET]
+  Parameters: {"id"=>"BARQUISIMETO"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARQUISIMETO') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.7ms)
+Completed in 52ms (View: 25, DB: 4) | 200 OK [http://127.0.0.1/buscar/BARQUISIMETO]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:31:38) [GET]
+  Parameters: {"id"=>"BARINAS"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'BARINAS') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (11.9ms)
+Completed in 135ms (View: 23, DB: 4) | 200 OK [http://127.0.0.1/buscar/BARINAS]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:31:43) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (11.9ms)
+Completed in 47ms (View: 23, DB: 3) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TiendasController#index (for 127.0.0.1 at 2009-12-11 10:32:43) [GET]
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+Rendering template within layouts/application
+Rendering tiendas/index
+Rendered tiendas/_new (9.8ms)
+Completed in 504ms (View: 43, DB: 3) | 200 OK [http://127.0.0.1/tiendas]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:32:48) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (20.5ms)
+Completed in 57ms (View: 32, DB: 3) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:34:16) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.0ms)
+Completed in 133ms (View: 24, DB: 3) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:34:20) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (13.6ms)
+Completed in 50ms (View: 25, DB: 3) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+  [4;36;1mTienda Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:35:25) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (1.1ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (13.0ms)
+Completed in 60ms (View: 35, DB: 4) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:35:28) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (16.2ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (11.5ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.3ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (13.3ms)
+Completed in 81ms (View: 25, DB: 29) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:35:40) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.4ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (undefined method `nombre' for #<Array:0x10352ced0>) on line #3 of app/views/buscar/show.erb:
+1: 
+2: <div class="info">
+3:   <h2><%= link_to @tiendas.nombre, @tiendas %></h2>
+4:   <%=h @tiendas.direccion %>
+5: </div>
+6: 
+
+    app/views/buscar/show.erb:3
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:36:09) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.4ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (undefined method `nombre' for #<Array:0x1037d81e8>) on line #3 of app/views/buscar/show.erb:
+1: 
+2: <div class="info">
+3:   <h2><%= link_to @tiendas.nombre, @tiendas %></h2>
+4:   <%=h @tiendas.direccion %>
+5: </div>
+6: 
+
+    app/views/buscar/show.erb:3
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:36:26) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.6ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/tiendas/_new.html.erb:
+1: <% form_for(@tienda) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/tiendas/_new.html.erb:1
+    app/views/layouts/application.html.erb:36
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (188.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:36:33) [GET]
+  Parameters: {"id"=>"MIAMI"}
+  [4;36;1mTienda Load (0.5ms)[0m   [0;1mSELECT * FROM `tiendas` [0m
+  [4;35;1mTienda Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `tiendas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;35;1mTienda Load (0.8ms)[0m   [0mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'MIAMI') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.3ms)
+Completed in 48ms (View: 24, DB: 3) | 200 OK [http://127.0.0.1/buscar/MIAMI]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscarController#show (for 127.0.0.1 at 2009-12-11 10:36:37) [GET]
+  Parameters: {"id"=>"ORLANDO"}
+  [4;35;1mTienda Load (0.5ms)[0m   [0mSELECT * FROM `tiendas` [0m
+  [4;36;1mTienda Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tiendas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tiendas` [0m
+  [4;36;1mTienda Load (0.3ms)[0m   [0;1mSELECT * FROM `tiendas` WHERE (`tiendas`.`ciudad` = 'ORLANDO') [0m
+Rendering template within layouts/application
+Rendering buscar/show
+Rendered tiendas/_new (12.1ms)
+Completed in 49ms (View: 23, DB: 3) | 200 OK [http://127.0.0.1/buscar/ORLANDO]
