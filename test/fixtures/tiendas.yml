@@ -1,9 +1,0 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  nombre: MyString
-  direccion: MyString
-
-two:
-  nombre: MyString
-  direccion: MyString
